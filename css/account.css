@@ -1,0 +1,85 @@
+.account-font-weight-bold {
+  font-weight: 600;
+}
+
+.account-font-weight-light {
+  font-weight: 100;
+}
+
+.account-info {
+  position: relative;
+}
+
+.account-info p:nth-child(2),
+.account-info p:nth-child(4),
+.account-info p:nth-child(6) {
+  border-bottom: 1px solid #706f6f;
+  padding-bottom: 10px;
+}
+
+.account-info p:nth-child(1)::after,
+.account-info p:nth-child(3)::after,
+.account-info p:nth-child(5)::after,
+.account-options p::after {
+  content: '>';
+  color: #706f6f;
+  position: absolute;
+  right: 0;
+}
+
+.account-options {
+  margin-top: 50px;
+}
+
+.account-options p {
+  font-weight: 600;
+}
+
+.producer-background {
+  background-image: url(../img/pexels-clam-lo-3355435.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.producer-background p {
+  color: white;
+  padding: 30px 30px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.producer-background button {
+  position: absolute;
+  bottom: 0;
+}
+
+.account-details {
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 767px) {
+  .accounts {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+  }
+
+  .account-details,
+  .producer-feature {
+    flex-basis: 50%;
+  }
+
+  .producer-background {
+    background-position-y: -110px;
+  }
+
+  .producer-background button {
+    width: 250px;
+    left: 25%;
+  }
+}

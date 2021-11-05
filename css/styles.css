@@ -156,6 +156,10 @@ h6 {
   font-family: var(--font-family-headings);
 }
 
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 .hero-banner {
   color: #f2f2f2;
 }
@@ -170,7 +174,9 @@ h6 {
   font-size: 2.35em;
 }
 
-.page-heading {
+.page-heading,
+.account-options p,
+.account-info p {
   color: #373736;
 }
 

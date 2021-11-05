@@ -44,10 +44,6 @@
   background-image: url(../img/google-logo.png);
 }
 
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
-
 .signup-feature-background {
   background-image: url(../img/flat-mountains.svg);
   background-repeat: no-repeat;
@@ -57,18 +53,26 @@
   border-radius: 5px;
 }
 
-.signup-feature-background p,
-.signup-feature-background h2 {
+.signup-feature-background p {
   color: white;
-  padding: 15px;
+  font-size: 1.1em;
+  padding: 30px 30px 0 30px;
 }
 
-.signup-feature-background p {
-  font-size: 1.1em;
+.signup-feature-background h2 {
+  padding: 0 30px 0 30px;
+  color: white;
+  font-size: 1.25em;
+}
+
+.mobile-button button {
+  position: absolute;
+  bottom: 0;
 }
 
 .feature-arrow-desktop {
   display: none;
+  padding: 30px;
 }
 
 @media screen and (min-width: 767px) {
@@ -97,10 +101,8 @@
     font-size: 1.3em;
   }
 
-  .signup-feature-background p,
-  .signup-feature-background h2,
-  .feature-arrow-desktop {
-    padding: 20px;
+  .signup-feature-background h2 {
+    font-size: 2em;
   }
 
   .mobile-button {
