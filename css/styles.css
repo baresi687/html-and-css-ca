@@ -1,0 +1,375 @@
+:root {
+  --font-family-paragraph: 'Heebo', sans-serif;
+  --font-family-headings: 'Noto Sans', sans-serif;
+  --body-background-color: #f2f2f2;
+  --button-links-color: #404a6f;
+  --upload-link-color: #4a7373;
+}
+
+body {
+  font-family: var(--font-family-paragraph);
+  background: var(--body-background-color);
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  height: 60px;
+}
+
+.main-nav,
+.about,
+.login-signup,
+.logo-desktop,
+.search {
+  display: none;
+}
+
+.mobile-nav {
+  padding: 2% 0;
+}
+
+.app-navigation-drawer {
+  position: relative;
+  display: none;
+  z-index: 43;
+  padding: 0.5em;
+  background-color: var(--body-background-color);
+  list-style: none;
+}
+
+.app-navigation-drawer li {
+  margin-bottom: 10px;
+}
+
+.app-navigation-drawer li a {
+  text-decoration: none;
+  color: var(--button-links-color);
+  font-weight: 700;
+}
+
+.app-navigation-drawer button {
+  width: 100%;
+  height: 40px;
+}
+
+.sr-only {
+  display: block;
+}
+
+#hamburger-menu:checked ~ .app-navigation-drawer {
+  display: block;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navigation {
+  display: inline;
+}
+
+.logo-mobile {
+  width: 38px;
+}
+
+label {
+  font-size: 1.5em;
+  color: #706f6f;
+  position: absolute;
+  right: 0;
+  margin-top: 2%;
+}
+
+.links {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--button-links-color);
+}
+
+.upload {
+  color: var(--upload-link-color);
+}
+
+.about {
+  font-weight: 300;
+}
+
+.main-nav {
+  font-size: 1.2em;
+}
+
+.search-logo {
+  width: 22px;
+  position: absolute;
+  right: 35px;
+  margin-top: 2%;
+}
+
+.button a {
+  color: #f2f2f2;
+  font-weight: 400;
+}
+
+.button {
+  background-color: var(--button-links-color);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+}
+
+.search-desktop {
+  list-style: none;
+}
+
+.hero-banner {
+  height: 960px;
+  background-image: url('../img/hero-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content {
+  top: 100px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+}
+
+.hero-banner {
+  color: #f2f2f2;
+}
+
+.sign-up-heading {
+  text-align: center;
+}
+
+.hero-heading {
+  font-weight: 700;
+  margin: 0;
+  font-size: 2.35em;
+}
+
+.page-heading {
+  color: #373736;
+}
+
+.content p {
+  color: #f2f2f2;
+}
+
+p span {
+  display: block;
+}
+
+.content h3 {
+  color: #f2f2f2;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.feature-higlights {
+  position: relative;
+  display: inline;
+  justify-content: space-between;
+}
+
+.feature1,
+.feature2,
+.feature3 {
+  width: 190px;
+  margin-top: 49px;
+  position: relative;
+  display: -webkit-inline-box;
+}
+
+.feature-higlights h1 {
+  font-size: 18px;
+  margin: 18px;
+}
+
+.footer {
+  height: 350px;
+}
+
+.footer-content {
+  position: relative;
+  top: 60px;
+  margin: 0 30%;
+}
+
+footer img {
+  height: 85px;
+}
+
+.footer ul {
+  list-style: none;
+  display: block;
+  color: #666666;
+}
+
+.footer ul li {
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.menu-bold {
+  font-weight: 500 !important;
+}
+
+.android,
+.ios {
+  position: relative;
+  right: -30px;
+}
+
+.android:before,
+.ios:before {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 109px;
+}
+
+.android::before {
+  background-image: url('../img/android.png');
+}
+
+.ios:before {
+  background-image: url('../img/ios.png');
+}
+
+.footer p {
+  position: relative;
+  text-align: center;
+  top: 178px;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 1110px;
+  }
+
+  header {
+    height: 150px;
+  }
+
+  header li {
+    margin-right: 40px;
+    display: inline-block;
+  }
+
+  header ul {
+    display: inline-block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-desktop {
+    display: inline-block;
+    margin-top: 18px;
+    width: 216px;
+  }
+
+  .search {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-image: url('../img/search.png');
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .main-nav,
+  .about {
+    display: flex;
+  }
+
+  .login-signup,
+  .login-signup div {
+    display: inline-block;
+  }
+
+  .button-signup {
+    width: 100px;
+    height: 40px;
+  }
+
+  .button-herobanner {
+    width: 200px;
+    height: 40px;
+  }
+
+  .sign-up-heading {
+    text-align: left;
+  }
+
+  .feature-higlights {
+    display: flex;
+  }
+
+  .feature1,
+  .feature2,
+  .feature3 {
+    width: 190px;
+    margin-top: 300px;
+    display: block;
+  }
+
+  .hero-icon {
+    margin-left: 15px;
+  }
+
+  .footer-content {
+    display: flex;
+    margin: 0;
+    gap: 120px;
+  }
+
+  .footer ul {
+    display: inline-block;
+  }
+
+  footer img {
+    height: 85px;
+  }
+
+  .android:before,
+  .ios:before {
+    right: 77px;
+  }
+}

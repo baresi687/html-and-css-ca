@@ -1,0 +1,117 @@
+.button-fb,
+.button-email,
+.button-google {
+  height: 50px;
+  position: relative;
+}
+
+.button-fb {
+  background-color: #3d5a98;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.button-google,
+.button-email {
+  background-color: #ffffff;
+  color: #373736;
+}
+
+.signup-main {
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.signup-main p {
+  text-align: center;
+}
+
+.button-fb span,
+.button-google span {
+  background-image: url(../img/fb-logo.png);
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+
+.button-fb span {
+  background-image: url(../img/fb-logo.png);
+}
+
+.button-google span {
+  background-image: url(../img/google-logo.png);
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-feature-background {
+  background-image: url(../img/flat-mountains.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.signup-feature-background p,
+.signup-feature-background h2 {
+  color: white;
+  padding: 15px;
+}
+
+.signup-feature-background p {
+  font-size: 1.1em;
+}
+
+.feature-arrow-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .navigation,
+  .signup-modules {
+    border-bottom: 1px solid #706f6f;
+    padding-bottom: 20px;
+  }
+
+  .signup-modules {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+  }
+
+  .signup-main,
+  .signup-features {
+    flex-basis: 50%;
+  }
+
+  .signup-feature-background {
+    height: 350px;
+  }
+
+  .signup-feature-background p {
+    font-size: 1.3em;
+  }
+
+  .signup-feature-background p,
+  .signup-feature-background h2,
+  .feature-arrow-desktop {
+    padding: 20px;
+  }
+
+  .mobile-button {
+    display: none;
+  }
+
+  .signup-main {
+    border: none;
+  }
+
+  .feature-arrow-desktop {
+    display: block;
+  }
+}
