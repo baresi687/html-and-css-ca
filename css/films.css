@@ -38,3 +38,16 @@
 .film-element img {
   width: 100%;
 }
+
+@media screen and (min-width: 767px) {
+  .film-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .film-element {
+    flex-basis: 31.333333%;
+    margin-bottom: 0;
+  }
+}
