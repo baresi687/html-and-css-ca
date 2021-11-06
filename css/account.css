@@ -6,7 +6,8 @@
   font-weight: 100;
 }
 
-.account-info {
+.account-info,
+.account-options {
   position: relative;
 }
 
@@ -56,17 +57,23 @@
   position: absolute;
   bottom: 0;
 }
-
 .account-details {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #706f6f;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 767px) {
+  .navigation {
+    border-bottom: 1px solid #706f6f;
+    padding-bottom: 20px;
+  }
+
   .accounts {
     display: flex;
     gap: 80px;
     margin-top: 20px;
+    border-bottom: 1px solid #706f6f;
+    padding-bottom: 20px;
   }
 
   .account-details,
@@ -81,5 +88,9 @@
   .producer-background button {
     width: 250px;
     left: 25%;
+  }
+
+  .account-details {
+    border: none;
   }
 }
