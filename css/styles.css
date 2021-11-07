@@ -175,6 +175,10 @@ h6 {
   font-size: 2.35em;
 }
 
+.page-heading {
+  font-size: 3em;
+}
+
 .page-heading,
 .account-options p,
 .account-info p {

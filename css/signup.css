@@ -76,10 +76,14 @@
 }
 
 @media screen and (min-width: 767px) {
-  .navigation,
-  .signup-modules {
+  .navigation {
     border-bottom: 1px solid #706f6f;
     padding-bottom: 20px;
+  }
+
+  .footer-content {
+    border-top: 1px solid #706f6f;
+    padding-top: 50px;
   }
 
   .signup-modules {

@@ -1,4 +1,4 @@
-.films-main {
+.films {
   color: var(--text-color);
 }
 
@@ -11,7 +11,7 @@
 .film-genres ul li {
   display: inline-block;
   margin-right: 2%;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .active {
@@ -23,16 +23,17 @@
 .select-menu {
   display: inline-block;
   margin-right: 10px;
+  font-weight: 100;
 }
 
-.select-menu {
+#genre {
   border: none;
   border-radius: 5px;
+  width: 100px;
 }
 
 .film-element {
   margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .film-element img {
@@ -40,6 +41,35 @@
 }
 
 @media screen and (min-width: 767px) {
+  .navigation {
+    border-bottom: 1px solid #706f6f;
+    padding-bottom: 20px;
+  }
+
+  .footer-content {
+    border-top: 1px solid #706f6f;
+    padding-top: 50px;
+  }
+
+  .films {
+    position: inherit;
+    top: 20px;
+  }
+
+  .film-genres ul li {
+    margin-right: 30px;
+    font-size: 1.1em;
+  }
+
+  .film-genres {
+    display: inline-block;
+  }
+
+  .film-sort {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
   .film-elements {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +78,13 @@
 
   .film-element {
     flex-basis: 31.333333%;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .film-element button {
+    width: 50%;
+    position: absolute;
+    left: 0;
   }
 }

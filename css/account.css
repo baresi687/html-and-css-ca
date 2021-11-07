@@ -68,12 +68,15 @@
     padding-bottom: 20px;
   }
 
+  .footer-content {
+    border-top: 1px solid #706f6f;
+    padding-top: 50px;
+  }
+
   .accounts {
     display: flex;
     gap: 80px;
     margin-top: 20px;
-    border-bottom: 1px solid #706f6f;
-    padding-bottom: 20px;
   }
 
   .account-details,
