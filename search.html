@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Independent films" />
+    <meta name="keywords" content="Video, Indie, Inspiring" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <title>Square Eyes - Search</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navigation">
+          <div class="mobile-nav">
+            <img
+              src="./img/mobil-logo.png"
+              alt="Square Eyes logo mobile"
+              class="logo-mobile"
+            />
+
+            <img
+              src="./img/search.png"
+              alt="search logo mobile"
+              class="search-logo"
+            />
+
+            <label for="hamburger-menu">
+              <span class="sr-only"> Hamburger menu</span>
+              <i class="fas fa-bars"></i>
+            </label>
+            <input id="hamburger-menu" type="checkbox" />
+
+            <ul class="app-navigation-drawer">
+              <li>
+                <a href="#">Films</a>
+              </li>
+              <li>
+                <a href="#">Upload</a>
+              </li>
+              <li>
+                <a href="#">Log in</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">
+                  <button class="button button-signup">Sign Up</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a href="/"
+            ><img
+              src="./img/logo.png"
+              alt="Square Eyes logo desktop"
+              class="logo-desktop"
+          /></a>
+
+          <div class="film-upload">
+            <ul class="main-nav">
+              <li>
+                <a href="#" class="links main-nav">Films</a>
+              </li>
+              <li>
+                <a href="#" class="links main-nav upload">Upload</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="search-desktop">
+              <li>
+                <input type="text" class="search" placeholder="" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="login-signup">
+            <ul>
+              <li>
+                <a href="#" class="links about">About</a>
+              </li>
+              <div>
+                <a href="#" class="links">Log in</a>
+                <button class="button button-signup">
+                  <a href="#" class="links">Sign Up</a>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-page">
+        <div class="container">
+          <div class="search-main">
+            <div class="search-controls">
+              <img
+                src="./img/filter.svg"
+                alt="Filter icon"
+                class="filter-icon"
+              />
+
+              <div class="search-sort">
+                <h4>Sort by:</h4>
+                <form action="POST" class="select-menu">
+                  <select name="genre" id="search-sort">
+                    <option value="latest">Relevance</option>
+                    <option value="popular">Popular</option>
+                    <option value="rating">Rating</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+            <div class="search-elements">
+              <div class="search-element">
+                <img
+                  src="./img/matheus-ferrero-cropped2-unsplash.jpg"
+                  alt="A day in the Sun"
+                />
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Producer: <a href="#" class="links">John Doe</a></h5>
+                <h3>15 USD</h3>
+                <button class="button">Buy</button>
+              </div>
+              <div class="search-element">
+                <img
+                  src="./img/matheus-ferrero-cropped2-unsplash.jpg"
+                  alt="A day in the Sun"
+                />
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Producer: <a href="#" class="links">John Doe</a></h5>
+                <h3>15 USD</h3>
+                <button class="button">Buy</button>
+              </div>
+              <div class="search-element">
+                <img
+                  src="./img/matheus-ferrero-cropped2-unsplash.jpg"
+                  alt="A day in the Sun"
+                />
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Producer: <a href="#" class="links">John Doe</a></h5>
+                <h3>15 USD</h3>
+                <button class="button">Buy</button>
+              </div>
+              <div class="search-element">
+                <img
+                  src="./img/matheus-ferrero-cropped2-unsplash.jpg"
+                  alt="A day in the Sun"
+                />
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Producer: <a href="#" class="links">John Doe</a></h5>
+                <h3>15 USD</h3>
+                <button class="button">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <img src="./img/logo.png" alt="logo" />
+          <ul>
+            <li class="menu-bold">Menu</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+
+          <ul>
+            <li class="menu-bold">Connect</li>
+            <li>Facebook</li>
+            <li>LinkedIn</li>
+            <li>Instagram</li>
+          </ul>
+
+          <ul>
+            <li class="menu-bold">Download</li>
+            <li class="android">Android</li>
+            <li class="ios">iOS</li>
+          </ul>
+        </div>
+
+        <p>This website was created for educational purpose only</p>
+      </div>
+    </footer>
+  </body>
+</html>
