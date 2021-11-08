@@ -127,4 +127,40 @@
     position: relative;
     top: 20px;
   }
+
+  .search-element p {
+    display: inline-block;
+    position: absolute;
+  }
+
+  .search-element h2,
+  .search-element p,
+  .search-element h5,
+  .search-element h3 {
+    margin: 0;
+    left: 600px;
+  }
+
+  .search-element h2 {
+    font-size: 1.5em;
+  }
+
+  .search-element p {
+    top: 60px;
+  }
+
+  .search-element h5 {
+    font-size: 1em;
+    top: 160px;
+  }
+
+  .search-element h3 {
+    top: 230px;
+  }
+
+  .search-element button {
+    width: 200px;
+    height: 40px;
+    left: 600px;
+  }
 }
