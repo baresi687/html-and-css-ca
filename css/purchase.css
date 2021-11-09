@@ -1,0 +1,118 @@
+.page-heading {
+  text-align: center;
+}
+
+.checkout-process {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+}
+
+.checkout-process:after {
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 0;
+  border: 1px solid black;
+  top: 50%;
+  right: 2%;
+  z-index: -1;
+}
+
+.checkout-film {
+  display: inline-block;
+  position: relative;
+  margin-top: 60px;
+  color: var(--text-color);
+}
+
+.checkout-film-image {
+  display: inline;
+}
+
+.checkout-film-image img {
+  width: 50%;
+}
+
+.checkout-film-description {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.checkout-film-description h2 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.payment-selection {
+  margin-top: 60px;
+}
+
+.payment-selection h4 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.payment-radio-select {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.vipps-info {
+  margin: 0 auto;
+  max-width: 286px;
+}
+
+.vipps-info p {
+  line-height: 24px;
+}
+
+.payment-selection button {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .navigation {
+    border-bottom: 1px solid #706f6f;
+    padding-bottom: 20px;
+  }
+
+  .footer-content {
+    border-top: 1px solid #706f6f;
+    padding-top: 50px;
+  }
+
+  main .container {
+    max-width: 600px;
+  }
+
+  .checkout-film-description h2 {
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-size: 1.7em;
+  }
+
+  .checkout-film-description h5 {
+    padding-bottom: 20px;
+    font-size: 1em;
+  }
+
+  .button-pay {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-pay button {
+    width: 200px;
+  }
+}
