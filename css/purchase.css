@@ -5,11 +5,25 @@
 .checkout-process {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  z-index: 5;
+  align-items: center;
 }
 
-.checkout-process:after {
+.line {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--icon-graphic-color);
+  margin: 15px;
+}
+
+.payment-flow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-flow h5 {
+  margin-top: 20px;
+}
+
+/* .checkout-process:after {
   content: '';
   position: absolute;
   width: 95%;
@@ -18,7 +32,7 @@
   top: 50%;
   right: 2%;
   z-index: -1;
-}
+} */
 
 .checkout-film {
   display: inline-block;
@@ -105,6 +119,15 @@
   .checkout-film-description h5 {
     padding-bottom: 20px;
     font-size: 1em;
+  }
+
+  .payment-options {
+    justify-content: space-evenly;
+  }
+
+  .payment-radio-select {
+    gap: 153px;
+    justify-content: center;
   }
 
   .button-pay {
