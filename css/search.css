@@ -49,55 +49,49 @@
   width: 100px;
 }
 
-.search-elements {
-  position: relative;
-}
-
 .search-element {
-  position: relative;
+  display: flex;
+  gap: 30px;
   margin-top: 30px;
 }
 
-.search-element img {
-  width: 50%;
+.search-image,
+.search-description {
+  flex-basis: 50%;
+  position: relative;
 }
 
-.search-element p {
-  display: none;
+.search-elements img {
+  width: 180px;
 }
 
-.search-element h2,
-.search-element h5,
-.search-element h3,
-.search-element button {
-  display: inline-block;
-  position: absolute;
-}
-
-.search-element h2,
-.search-element h5,
-.search-element h3 {
+.search-description h2 {
   margin: 0;
-  left: 200px;
+  font-size: 1.1em;
 }
 
-.search-element h2 {
-  font-size: 1.2em;
+.search-description h5 {
+  font-size: 0.9em;
 }
 
-.search-element h5 {
-  top: 44px;
+.search-description h3 {
+  margin: 0;
+  font-size: 1em;
 }
 
-.search-element h3 {
+.search-description .search-buy {
+  position: absolute;
   bottom: 0;
+  right: 0;
 }
 
-.search-element button {
-  bottom: 0;
+.search-description button {
   width: 80px;
   height: 30px;
-  right: 0;
+}
+
+.search-description p {
+  display: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -128,39 +122,35 @@
     top: 20px;
   }
 
-  .search-element p {
-    display: inline-block;
-    position: absolute;
+  .search-image,
+  .search-description {
+    flex-basis: revert;
   }
 
-  .search-element h2,
-  .search-element p,
-  .search-element h5,
-  .search-element h3 {
-    margin: 0;
-    left: 600px;
+  .search-elements img {
+    width: 500px;
   }
 
-  .search-element h2 {
+  .search-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .search-description h2 {
     font-size: 1.5em;
   }
 
   .search-element p {
-    top: 60px;
+    display: block;
   }
 
-  .search-element h5 {
-    font-size: 1em;
-    top: 160px;
-  }
-
-  .search-element h3 {
-    top: 230px;
+  .search-buy {
+    position: inherit !important;
   }
 
   .search-element button {
     width: 200px;
     height: 40px;
-    left: 600px;
   }
 }
