@@ -96,6 +96,10 @@
 }
 
 @media screen and (min-width: 767px) {
+  .checkout {
+    position: relative;
+    top: 20px;
+  }
   .navigation {
     border-bottom: 1px solid #706f6f;
     padding-bottom: 20px;
