@@ -150,7 +150,7 @@ button {
 
 .hero-banner {
   height: 960px;
-  background-image: url('../img/hero-image.jpg');
+  background-image: url('../img/hero-image-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -356,6 +356,10 @@ footer img {
   .button-signup {
     width: 100px;
     height: 40px;
+  }
+
+  .hero-banner {
+    background-image: url(../img/hero-image.jpg);
   }
 
   .button-herobanner {

@@ -19,9 +19,13 @@
   justify-content: space-between;
 }
 
-.payment-flow h5 {
+.payment-flow p {
   margin-top: 20px;
+  font-weight: 700;
 }
+
+/* My attempt at making a border between the checkout flow icons below,
+with pseudo after. I could not get the border to get below them with z-index */
 
 /* .checkout-process:after {
   content: '';
@@ -35,29 +39,39 @@
 } */
 
 .checkout-film {
-  display: inline-block;
-  position: relative;
-  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
   color: var(--text-color);
 }
 
-.checkout-film-image {
-  display: inline;
+.checkout-film-image,
+.checkout-film-description {
+  flex-basis: 50%;
 }
 
 .checkout-film-image img {
-  width: 50%;
+  display: block;
+  width: 180px;
 }
 
 .checkout-film-description {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .checkout-film-description h2 {
   font-size: 1.1em;
+  margin: 0;
+}
+
+.checkout-film-description h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.checkout-film-description h4 {
   margin: 0;
 }
 
@@ -131,19 +145,31 @@
     max-width: 600px;
   }
 
+  .checkout-film {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .checkout-film-image {
+    flex-basis: 65%;
+  }
+
+  .checkout-film-description {
+    flex-basis: 35%;
+    justify-content: space-around;
+  }
+
   .checkout-film-image img {
     content: url(../img/film-thumbnail.jpg);
+    width: 100%;
   }
 
   .checkout-film-description h2 {
-    margin-top: 0;
-    padding-bottom: 20px;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
-  .checkout-film-description h5 {
-    padding-bottom: 20px;
-    font-size: 1em;
+  .checkout-film-description h3 {
+    font-size: 1.1em;
   }
 
   .payment-options {

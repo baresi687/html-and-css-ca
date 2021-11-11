@@ -19,7 +19,7 @@
   text-underline-offset: 2px;
 }
 
-.film-sort h4,
+.film-sort p,
 .select-menu {
   display: inline-block;
   margin-right: 10px;
@@ -38,6 +38,10 @@
 
 .film-element img {
   width: 100%;
+}
+
+.film-element h3 {
+  font-weight: 400;
 }
 
 @media screen and (min-width: 767px) {
@@ -67,7 +71,7 @@
 
   .film-sort {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
   }
 
   .film-elements {

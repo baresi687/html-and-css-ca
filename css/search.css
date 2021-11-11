@@ -31,7 +31,7 @@
 }
 
 .search-sort,
-.search-sort h4,
+.search-sort p,
 .select-menu {
   display: inline-block;
   margin-right: 10px;
@@ -61,8 +61,9 @@
   position: relative;
 }
 
-.search-elements img {
-  width: 180px;
+.search-element img {
+  width: 100%;
+  display: block;
 }
 
 .search-description h2 {
@@ -70,19 +71,19 @@
   font-size: 1.1em;
 }
 
-.search-description h5 {
+.search-description h3 {
   font-size: 0.9em;
+  font-weight: 400;
 }
 
-.search-description h3 {
+.search-description h4 {
   margin: 0;
   font-size: 1em;
+  display: inline-flex;
 }
 
-.search-description .search-buy {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.search-buy {
+  margin-left: 6px;
 }
 
 .search-description button {
@@ -128,8 +129,8 @@
   }
 
   .search-elements img {
-    width: 500px;
     content: url(../img/film-thumbnail.jpg);
+    width: 500px;
   }
 
   .search-description {
@@ -147,7 +148,7 @@
   }
 
   .search-buy {
-    position: inherit !important;
+    margin-left: 0;
   }
 
   .search-element button {
