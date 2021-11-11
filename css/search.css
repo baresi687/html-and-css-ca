@@ -129,6 +129,7 @@
 
   .search-elements img {
     width: 500px;
+    content: url(../img/film-thumbnail.jpg);
   }
 
   .search-description {

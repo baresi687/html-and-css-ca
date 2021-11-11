@@ -30,7 +30,7 @@
       <div class="container">
         <nav class="navigation">
           <div class="mobile-nav">
-            <a href="/"
+            <a href="/" aria-label="Home"
               ><img
                 src="./img/mobil-logo.png"
                 alt="Square Eyes logo mobile"
@@ -39,7 +39,7 @@
 
             <a href="./search.html">
               <img
-                src="./img/search.png"
+                src="./img/search.svg"
                 alt="search logo mobile"
                 class="search-logo"
             /></a>
@@ -71,7 +71,7 @@
             </ul>
           </div>
 
-          <a href="/"
+          <a href="/" aria-label="Home"
             ><img
               src="./img/logo.png"
               alt="Square Eyes logo desktop"
@@ -92,8 +92,14 @@
           <div>
             <ul class="search-desktop">
               <li>
-                <a href="./search.html"
-                  ><input type="text" class="search" placeholder=""
+                <a href="./search.html">
+                  <label for="search" class="search-label">Search</label>
+                  <input
+                    id="search"
+                    type="text"
+                    class="search"
+                    placeholder=""
+                    name="search"
                 /></a>
               </li>
             </ul>

@@ -6,7 +6,6 @@
     <meta name="description" content="Independent films" />
     <meta name="keywords" content="Video, Indie, Inspiring, Buy, Purchase" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -20,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/purchase.css" />
     <title>Square Eyes - Purchase</title>
@@ -30,7 +29,7 @@
       <div class="container">
         <nav class="navigation">
           <div class="mobile-nav">
-            <a href="/"
+            <a href="/" aria-label="Home"
               ><img
                 src="./img/mobil-logo.png"
                 alt="Square Eyes logo mobile"
@@ -39,7 +38,7 @@
 
             <a href="./search.html">
               <img
-                src="./img/search.png"
+                src="./img/search.svg"
                 alt="search logo mobile"
                 class="search-logo"
             /></a>
@@ -71,7 +70,7 @@
             </ul>
           </div>
 
-          <a href="/"
+          <a href="/" aria-label="Home"
             ><img
               src="./img/logo.png"
               alt="Square Eyes logo desktop"
@@ -92,13 +91,18 @@
           <div>
             <ul class="search-desktop">
               <li>
-                <a href="./search.html"
-                  ><input type="text" class="search" placeholder=""
+                <a href="./search.html">
+                  <label for="search" class="search-label">Search</label>
+                  <input
+                    id="search"
+                    type="text"
+                    class="search"
+                    placeholder=""
+                    name="search"
                 /></a>
               </li>
             </ul>
           </div>
-
           <div class="login-signup">
             <ul>
               <li>
@@ -123,15 +127,15 @@
           <div class="checkout-main">
             <div class="checkout-process">
               <div class="icon-1">
-                <img src="./img/checkout-1.png" alt="Checkout icon" />
+                <img src="./img/checkout-1.svg" alt="Checkout icon" />
               </div>
               <span class="line"></span>
               <div class="icon-2">
-                <img src="./img/checkout-2.png" alt="Checkout icon" />
+                <img src="./img/checkout-2.svg" alt="Checkout icon" />
               </div>
               <span class="line"></span>
               <div class="icon-3">
-                <img src="./img/checkout-3.png" alt="Checkout icon" />
+                <img src="./img/checkout-3.svg" alt="Checkout icon" />
               </div>
             </div>
 
@@ -144,7 +148,7 @@
 
           <div class="checkout-film">
             <div class="checkout-film-image">
-              <img src="./img/film-thumbnail.jpg" alt="Film thumbnail" />
+              <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" />
             </div>
             <div class="checkout-film-description">
               <h2>A Day in the Sun</h2>
@@ -167,6 +171,7 @@
             </div>
 
             <form action="POST" class="payment-radio-select">
+              <label for="vipps" class="vipps-label">Vipps</label>
               <input
                 type="radio"
                 id="vipps"
@@ -174,7 +179,11 @@
                 value="vipps"
                 checked
               />
+              <label for="visa" class="visa-label">Visa</label>
               <input type="radio" id="visa" name="test" value="visa" />
+              <label for="mastercard" class="mastercard-label"
+                >Mastercard</label
+              >
               <input
                 type="radio"
                 id="mastercard"

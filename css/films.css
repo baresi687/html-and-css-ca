@@ -82,6 +82,10 @@
     position: relative;
   }
 
+  .film-element img {
+    content: url(../img/film-thumbnail.jpg);
+  }
+
   .film-element button {
     width: 50%;
     position: absolute;
