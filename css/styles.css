@@ -99,7 +99,7 @@ label {
 /* For accessibility. Hidden */
 .search-label {
   top: 0;
-  right: 350px;
+  right: 360px;
   color: var(--body-background-color);
 }
 

@@ -28,7 +28,6 @@
 
 .button-fb span,
 .button-google span {
-  background-image: url(../img/fb-logo.png);
   height: 24px;
   width: 24px;
   position: absolute;
