@@ -10,7 +10,8 @@
   border-radius: 5px;
   background-image: url('../img/search.png');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 150px;
+  text-indent: 10px;
 }
 
 .search-results {
