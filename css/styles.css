@@ -41,7 +41,7 @@ header {
   padding: 20px;
   background-color: var(--body-background-color);
   list-style: none;
-  height: 10px;
+  height: 210px;
   transition: transform 0.3s ease-out;
   transform: translateX(-150%);
 }
