@@ -36,12 +36,14 @@ header {
 
 .app-navigation-drawer {
   position: relative;
-  display: none;
-  z-index: 43;
+  display: block;
+  z-index: 5;
   padding: 20px;
   background-color: var(--body-background-color);
   list-style: none;
   height: 210px;
+  transition: transform 0.3s ease-out;
+  transform: translateX(-150%);
 }
 
 .app-navigation-drawer li {
@@ -71,7 +73,7 @@ header {
 }
 
 #hamburger-menu:checked ~ .app-navigation-drawer {
-  display: block;
+  transform: translate(0px);
 }
 
 #hamburger-menu {
@@ -94,9 +96,10 @@ label {
   margin-top: 2%;
 }
 
+/* For accessibility. Hidden */
 .search-label {
-  bottom: 0;
-  right: 450px;
+  top: 0;
+  right: 350px;
   color: var(--body-background-color);
 }
 
