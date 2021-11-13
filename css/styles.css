@@ -43,7 +43,7 @@ header {
   list-style: none;
   height: 210px;
   transition: transform 0.3s ease-out;
-  transform: translateX(-150%);
+  transform: translateX(-170%);
 }
 
 .app-navigation-drawer li {
@@ -247,7 +247,7 @@ p span {
 }
 
 .footer {
-  height: 350px;
+  height: auto;
 }
 
 .footer-content {
@@ -316,7 +316,7 @@ footer img {
   }
 
   header {
-    height: 150px;
+    height: auto;
   }
 
   header li {
