@@ -100,6 +100,7 @@ with pseudo after. I could not get the border to get below them with z-index */
 .visa-label,
 .mastercard-label {
   color: var(--body-background-color);
+  font-size: 1em;
 }
 .vipps-label {
   left: 80px;
@@ -122,7 +123,8 @@ with pseudo after. I could not get the border to get below them with z-index */
   line-height: 24px;
 }
 
-.payment-selection button {
+.button-pay {
+  display: none;
   margin-top: 20px;
 }
 
@@ -160,7 +162,7 @@ with pseudo after. I could not get the border to get below them with z-index */
   }
 
   .checkout-film-image img {
-    content: url(../img/film-thumbnail.jpg);
+    content: url("../img/film-thumbnail.jpg");
     width: 100%;
   }
 
@@ -182,7 +184,6 @@ with pseudo after. I could not get the border to get below them with z-index */
   }
 
   .button-pay {
-    display: flex;
     justify-content: center;
   }
 
