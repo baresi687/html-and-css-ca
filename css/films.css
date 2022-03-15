@@ -57,7 +57,7 @@
 
   .films {
     position: inherit;
-    top: 20px;
+    margin-top: 20px;
   }
 
   .film-genres ul li {

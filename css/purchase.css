@@ -90,28 +90,14 @@ with pseudo after. I could not get the border to get below them with z-index */
   justify-content: space-around;
 }
 
-.payment-radio-select {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+.payment-options div input {
+  position: relative;
+  left: 22px;
 }
 
-.vipps-label,
-.visa-label,
-.mastercard-label {
-  color: var(--body-background-color);
-  font-size: 1em;
-}
-.vipps-label {
-  left: 80px;
-}
-
-.visa-label {
-  left: 270px;
-}
-
-.mastercard-label {
-  right: 30px;
+.payment-selection label {
+  position: initial;
+  display: block;
 }
 
 .vipps-info {
@@ -131,7 +117,7 @@ with pseudo after. I could not get the border to get below them with z-index */
 @media screen and (min-width: 767px) {
   .checkout {
     position: relative;
-    top: 20px;
+    margin-top: 20px;
   }
   .navigation {
     border-bottom: 1px solid #706f6f;

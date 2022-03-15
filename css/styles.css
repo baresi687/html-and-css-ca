@@ -151,6 +151,11 @@ button {
   width: 100%;
 }
 
+.button:hover {
+  background-color: var(--upload-link-color);
+  transition: all ease-in .1s;
+}
+
 .search-desktop {
   list-style: none;
 }

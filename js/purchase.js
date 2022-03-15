@@ -1,4 +1,4 @@
-const inputRadios = document.querySelectorAll("form input");
+const inputRadios = document.querySelectorAll(".payment-options div input");
 
 inputRadios.forEach((item) => {
   item.addEventListener("change", () => {
@@ -6,9 +6,9 @@ inputRadios.forEach((item) => {
   })
 })
 
-const inputRadioVipps = document.querySelector("form #vipps");
-const inputRadioVisa = document.querySelector("form #visa");
-const inputRadioMastercard = document.querySelector("form #mastercard");
+const inputRadioVipps = document.querySelector("#vipps");
+const inputRadioVisa = document.querySelector("#visa");
+const inputRadioMastercard = document.querySelector("#mastercard");
 
 inputRadioVipps.addEventListener("change", () => {
   document.querySelector(".vipps-info").innerHTML = `<p>Pay with ease on your mobile with Vipps<br/>
