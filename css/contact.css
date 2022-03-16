@@ -3,6 +3,18 @@
   margin-bottom: 30px;
 }
 
+.fa-check {
+  display: none;
+}
+
+.checkmark {
+  display: initial;
+  color: green;
+  font-size: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
 form label {
   display: block;
   color: var(--text-color);
@@ -50,6 +62,11 @@ textarea {
   padding: 20px;
   border: 2px solid #5c975c;
   border-radius: 10px;
+}
+
+.checkbox-msg {
+  width: 20px;
+  fill: green;
 }
 
 .contact-image {
