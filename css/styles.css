@@ -153,6 +153,7 @@ button {
 
 .button:hover {
   background-color: var(--upload-link-color);
+  color: var(--body-background-color);
   transition: all ease-in .1s;
 }
 
