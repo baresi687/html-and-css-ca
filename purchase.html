@@ -3,22 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Independent films" />
+    <meta name="description" content="SquareEyes is a website for enthusiasts of independent films. Buy films from independent creators. Upload your independent films to the site for sale."/>
     <meta name="keywords" content="Video, Indie, Inspiring, Buy, Purchase" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script src="./js/purchase.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/purchase.css" />
@@ -29,26 +21,17 @@
       <div class="container">
         <nav class="navigation">
           <div class="mobile-nav">
-            <a href="/" aria-label="Home"
-              ><img
-                src="./img/mobil-logo.png"
-                alt="Square Eyes logo mobile"
-                class="logo-mobile"
-            /></a>
-
+            <a href="./" aria-label="Home">
+              <img src="./img/mobil-logo.png" alt="Square Eyes logo mobile" class="logo-mobile"/>
+            </a>
             <a href="./search.html">
-              <img
-                src="./img/search.svg"
-                alt="search logo mobile"
-                class="search-logo"
-            /></a>
-
+              <img src="./img/search.svg" alt="search logo mobile" class="search-logo"/>
+            </a>
             <label for="hamburger-menu">
               <span class="sr-only"> Hamburger menu</span>
               <i class="fas fa-bars"></i>
             </label>
             <input id="hamburger-menu" type="checkbox" />
-
             <ul class="app-navigation-drawer">
               <li>
                 <a href="./films.html">Films</a>
@@ -69,14 +52,9 @@
               </li>
             </ul>
           </div>
-
-          <a href="/" aria-label="Home"
-            ><img
-              src="./img/logo.png"
-              alt="Square Eyes logo desktop"
-              class="logo-desktop"
-          /></a>
-
+          <a href="./" aria-label="Home">
+            <img src="./img/logo.png" alt="Square Eyes logo desktop" class="logo-desktop"/>
+          </a>
           <div class="film-upload">
             <ul class="main-nav">
               <li>
@@ -87,19 +65,13 @@
               </li>
             </ul>
           </div>
-
           <div>
             <ul class="search-desktop">
               <li>
                 <a href="./search.html">
                   <label for="search" class="search-label">Search</label>
-                  <input
-                    id="search"
-                    type="text"
-                    class="search"
-                    placeholder=""
-                    name="search"
-                /></a>
+                  <input id="search" type="text" class="search" placeholder="" name="search"/>
+                </a>
               </li>
             </ul>
           </div>
@@ -119,7 +91,6 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="checkout">
         <div class="container">
@@ -138,14 +109,12 @@
                 <img src="./img/checkout-3.svg" alt="Checkout icon" />
               </div>
             </div>
-
             <div class="payment-flow">
               <p>Payment</p>
               <p>Checkout</p>
               <p>Watch</p>
             </div>
           </div>
-
           <div class="checkout-film">
             <div class="checkout-film-image">
               <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" />
@@ -158,58 +127,34 @@
           </div>
           <div class="payment-selection">
             <h4>Select payment method</h4>
-            <div class="payment-options">
-              <div class="vipps">
-                <img src="./img/vipps.svg" alt="Vipps logo" />
+            <form>
+              <div class="payment-options">
+                <div class="vipps">
+                  <label for="vipps" class="vipps-label"><img src="./img/vipps.svg" alt="Vipps logo" /></label>
+                  <input type="radio" id="vipps" name="test" value="vipps"/>
+                </div>
+                <div class="visa">
+                  <label for="visa" class="visa-label"><img src="./img/visa.svg" alt="VISA logo" /></label>
+                  <input type="radio" id="visa" name="test" value="visa"/>
+                </div>
+                <div class="mastercard">
+                  <label for="mastercard" class="mastercard-label"><img src="./img/mastercard.svg" alt="Mastercard logo" /></label>
+                  <input type="radio" id="mastercard" name="test" value="mastercard"/>
+                </div>
               </div>
-              <div class="visa">
-                <img src="./img/visa.svg" alt="VISA logo" />
+              <div class="vipps-info">
+                <p>Pay with ease on your mobile with Vipps<br/>
+                  <a href="#" class="links">Read more</a>
+                </p>
               </div>
-              <div class="mastercard">
-                <img src="./img/mastercard.svg" alt="Mastercard logo" />
+              <div class="button-pay">
+                <button class="button">Continue</button>
               </div>
-            </div>
-
-            <form action="POST" class="payment-radio-select">
-              <label for="vipps" class="vipps-label">Vipps</label>
-              <input
-                type="radio"
-                id="vipps"
-                name="test"
-                value="vipps"
-                checked
-              />
-              <label for="visa" class="visa-label">Visa</label>
-              <input type="radio" id="visa" name="test" value="visa" />
-              <label for="mastercard" class="mastercard-label"
-                >Mastercard</label
-              >
-              <input
-                type="radio"
-                id="mastercard"
-                name="test"
-                value="mastercard"
-              />
             </form>
-
-            <div class="vipps-info">
-              <p>
-                Pay with ease on your mobile with Vipps <br /><a
-                  href="#"
-                  class="links"
-                  >Read more</a
-                >
-              </p>
-            </div>
-
-            <div class="button-pay">
-              <button class="button">Continue</button>
-            </div>
           </div>
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -220,21 +165,18 @@
             <li>About</li>
             <li>Contact</li>
           </ul>
-
           <ul>
             <li class="menu-bold">Connect</li>
             <li>Facebook</li>
             <li>LinkedIn</li>
             <li>Instagram</li>
           </ul>
-
           <ul>
             <li class="menu-bold">Download</li>
             <li class="android">Android</li>
             <li class="ios">iOS</li>
           </ul>
         </div>
-
         <p>This website was created for educational purpose only</p>
       </div>
     </footer>

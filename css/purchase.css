@@ -90,27 +90,16 @@ with pseudo after. I could not get the border to get below them with z-index */
   justify-content: space-around;
 }
 
-.payment-radio-select {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+.payment-options div input {
+  position: relative;
+  left: 22px;
+  cursor: pointer;
 }
 
-.vipps-label,
-.visa-label,
-.mastercard-label {
-  color: var(--body-background-color);
-}
-.vipps-label {
-  left: 80px;
-}
-
-.visa-label {
-  left: 270px;
-}
-
-.mastercard-label {
-  right: 30px;
+.payment-selection label {
+  position: initial;
+  display: block;
+  cursor: pointer;
 }
 
 .vipps-info {
@@ -122,14 +111,15 @@ with pseudo after. I could not get the border to get below them with z-index */
   line-height: 24px;
 }
 
-.payment-selection button {
+.button-pay {
+  display: none;
   margin-top: 20px;
 }
 
 @media screen and (min-width: 767px) {
   .checkout {
     position: relative;
-    top: 20px;
+    margin-top: 20px;
   }
   .navigation {
     border-bottom: 1px solid #706f6f;
@@ -160,7 +150,7 @@ with pseudo after. I could not get the border to get below them with z-index */
   }
 
   .checkout-film-image img {
-    content: url(../img/film-thumbnail.jpg);
+    content: url("../img/film-thumbnail.jpg");
     width: 100%;
   }
 
@@ -182,7 +172,6 @@ with pseudo after. I could not get the border to get below them with z-index */
   }
 
   .button-pay {
-    display: flex;
     justify-content: center;
   }
 

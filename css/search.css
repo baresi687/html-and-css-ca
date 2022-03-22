@@ -8,7 +8,7 @@
   height: 30px;
   border: none;
   border-radius: 5px;
-  background-image: url('../img/search.png');
+  background-image: url("../img/search.png");
   background-repeat: no-repeat;
   background-position: 150px;
   text-indent: 10px;
@@ -130,7 +130,7 @@
   }
 
   .search-elements img {
-    content: url(../img/film-thumbnail.jpg);
+    content: url("../img/film-thumbnail.jpg");
     width: 500px;
   }
 

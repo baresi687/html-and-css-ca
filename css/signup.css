@@ -36,15 +36,15 @@
 }
 
 .button-fb span {
-  background-image: url(../img/fb-logo.png);
+  background-image: url("../img/fb-logo.png");
 }
 
 .button-google span {
-  background-image: url(../img/google-logo.png);
+  background-image: url("../img/google-logo.png");
 }
 
 .signup-feature-background {
-  background-image: url(../img/flat-mountains.svg);
+  background-image: url("../img/flat-mountains.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
