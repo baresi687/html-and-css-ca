@@ -38,6 +38,7 @@ header {
   position: relative;
   display: block;
   z-index: 5;
+  margin: 0;
   padding: 20px;
   background-color: var(--body-background-color);
   list-style: none;
@@ -48,7 +49,7 @@ header {
 
 .app-navigation-drawer li {
   margin-bottom: 10px;
-  border-bottom: 1px solid #706f6f;
+  border-bottom: 1px solid #d9d8d8;
   padding-bottom: 10px;
 }
 
@@ -58,6 +59,8 @@ header {
 }
 
 .app-navigation-drawer li a {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
   color: var(--button-links-color);
   font-weight: 700;
