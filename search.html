@@ -3,22 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Independent films" />
+    <meta name="description" content="SquareEyes is a website for enthusiasts of independent films. Buy films from independent creators. Upload your independent films to the site for sale."/>
     <meta name="keywords" content="Video, Indie, Inspiring, Search" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/search.css" />
@@ -29,19 +20,14 @@
       <div class="container">
         <nav class="navigation">
           <div class="mobile-nav">
-            <a href="/" aria-label="Home"
-              ><img
-                src="./img/mobil-logo.png"
-                alt="Square Eyes logo mobile"
-                class="logo-mobile"
-            /></a>
-
+            <a href="./" aria-label="Home">
+              <img src="./img/mobil-logo.png" alt="Square Eyes logo mobile" class="logo-mobile"/>
+            </a>
             <label for="hamburger-menu">
               <span class="sr-only"> Hamburger menu</span>
               <i class="fas fa-bars"></i>
             </label>
             <input id="hamburger-menu" type="checkbox" />
-
             <ul class="app-navigation-drawer">
               <li>
                 <a href="./films.html">Films</a>
@@ -62,14 +48,9 @@
               </li>
             </ul>
           </div>
-
-          <a href="/" aria-label="Home"
-            ><img
-              src="./img/logo.png"
-              alt="Square Eyes logo desktop"
-              class="logo-desktop"
-          /></a>
-
+          <a href="./" aria-label="Home">
+            <img src="./img/logo.png" alt="Square Eyes logo desktop" class="logo-desktop"/>
+          </a>
           <div class="film-upload">
             <ul class="main-nav">
               <li>
@@ -80,15 +61,14 @@
               </li>
             </ul>
           </div>
-
           <div class="search-results">
             <ul class="search-desktop">
               <li>
-                <input type="text" class="search" placeholder="john doe" />
+                <label for="search-result" class="search-label">Search</label>
+                <input id="search-result" type="text" class="search" placeholder="john doe" />
               </li>
             </ul>
           </div>
-
           <div class="login-signup">
             <ul>
               <li>
@@ -105,38 +85,31 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="search-page">
         <div class="container">
           <div class="search-main">
             <h1 class="page-heading">Search results for 'john doe'</h1>
             <div class="search-controls">
-              <img
-                src="./img/filter.svg"
-                alt="Filter icon"
-                class="filter-icon"
-              />
-
+              <img src="./img/filter.svg" alt="Filter icon" class="filter-icon"/>
               <div class="search-sort">
                 <p>Sort by:</p>
                 <p></p>
-                <form action="POST" class="select-menu">
-                  <select name="genre" id="search-sort">
-                    <option value="latest">Relevance</option>
-                    <option value="popular">Popular</option>
-                    <option value="rating">Rating</option>
-                  </select>
+                <form class="select-menu">
+                 <label for="search-sort">
+                   <select name="genre" id="search-sort">
+                     <option value="latest">Relevance</option>
+                     <option value="popular">Popular</option>
+                     <option value="rating">Rating</option>
+                   </select>
+                 </label>
                 </form>
               </div>
             </div>
             <div class="search-elements">
               <div class="search-element">
                 <div class="search-image">
-                  <img
-                    src="./img/film-thumbnail-mobile.jpg"
-                    alt="A day in the Sun"
-                  />
+                  <img src="./img/film-thumbnail-mobile.jpg" alt="A day in the Sun"/>
                 </div>
                 <div class="search-description">
                   <h2>A Day in the Sun</h2>
@@ -147,17 +120,14 @@
                   </p>
                   <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                   <h4>15 USD</h4>
-                  <a href="./purchase.html" class="search-buy"
-                    ><button class="button">Buy</button></a
-                  >
+                  <a href="./purchase.html" class="search-buy">
+                    <button class="button">Buy</button>
+                  </a>
                 </div>
               </div>
               <div class="search-element">
                 <div class="search-image">
-                  <img
-                    src="./img/film-thumbnail-mobile.jpg"
-                    alt="A day in the Sun"
-                  />
+                  <img src="./img/film-thumbnail-mobile.jpg" alt="A day in the Sun"/>
                 </div>
                 <div class="search-description">
                   <h2>A Day in the Sun</h2>
@@ -168,17 +138,14 @@
                   </p>
                   <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                   <h4>15 USD</h4>
-                  <a href="./purchase.html" class="search-buy"
-                    ><button class="button">Buy</button></a
-                  >
+                  <a href="./purchase.html" class="search-buy">
+                    <button class="button">Buy</button>
+                  </a>
                 </div>
               </div>
               <div class="search-element">
                 <div class="search-image">
-                  <img
-                    src="./img/film-thumbnail-mobile.jpg"
-                    alt="A day in the Sun"
-                  />
+                  <img src="./img/film-thumbnail-mobile.jpg" alt="A day in the Sun"/>
                 </div>
                 <div class="search-description">
                   <h2>A Day in the Sun</h2>
@@ -189,17 +156,14 @@
                   </p>
                   <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                   <h4>15 USD</h4>
-                  <a href="./purchase.html" class="search-buy"
-                    ><button class="button">Buy</button></a
-                  >
+                  <a href="./purchase.html" class="search-buy">
+                    <button class="button">Buy</button>
+                  </a>
                 </div>
               </div>
               <div class="search-element">
                 <div class="search-image">
-                  <img
-                    src="./img/film-thumbnail-mobile.jpg"
-                    alt="A day in the Sun"
-                  />
+                  <img src="./img/film-thumbnail-mobile.jpg" alt="A day in the Sun"/>
                 </div>
                 <div class="search-description">
                   <h2>A Day in the Sun</h2>
@@ -210,9 +174,9 @@
                   </p>
                   <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                   <h4>15 USD</h4>
-                  <a href="./purchase.html" class="search-buy"
-                    ><button class="button">Buy</button></a
-                  >
+                  <a href="./purchase.html" class="search-buy">
+                    <button class="button">Buy</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -220,7 +184,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -231,21 +194,18 @@
             <li>About</li>
             <li>Contact</li>
           </ul>
-
           <ul>
             <li class="menu-bold">Connect</li>
             <li>Facebook</li>
             <li>LinkedIn</li>
             <li>Instagram</li>
           </ul>
-
           <ul>
             <li class="menu-bold">Download</li>
             <li class="android">Android</li>
             <li class="ios">iOS</li>
           </ul>
         </div>
-
         <p>This website was created for educational purpose only</p>
       </div>
     </footer>

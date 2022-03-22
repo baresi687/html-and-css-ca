@@ -88,16 +88,18 @@ header {
   width: 38px;
 }
 
-label {
+.mobile-nav label {
   font-size: 1.5em;
   color: #706f6f;
   position: absolute;
   right: 0;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 /* For accessibility. Hidden */
 .search-label {
+  position: absolute;
   top: 0;
   right: 360px;
   color: var(--body-background-color);
@@ -109,12 +111,12 @@ label {
   color: var(--button-links-color);
 }
 
-.upload {
-  color: var(--upload-link-color) !important;
+.main-nav li .upload, .app-navigation-drawer .upload {
+  color: var(--upload-link-color);
 }
 
-.about {
-  font-weight: 300 !important;
+.login-signup .about, .app-navigation-drawer .about {
+  font-weight: 300;
 }
 
 .main-nav {
@@ -162,8 +164,8 @@ button {
 }
 
 .hero-banner {
-  height: 960px;
-  background-image: url('../img/hero-image-mobile.jpg');
+  height: 1070px; /*960*/
+  background-image: url("../img/hero-image-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -217,8 +219,14 @@ h6 {
   color: #373736;
 }
 
-.content p {
+.content:nth-child(-n+3) {
+  text-shadow: 1px 1px 1px var(--text-color);
+}
+
+.content > p {
   color: #f2f2f2;
+  font-size: 1.20em;
+  line-height: 1.6;
 }
 
 p span {
@@ -236,6 +244,14 @@ p span {
   position: relative;
   display: inline;
   justify-content: space-between;
+}
+
+.feature-higlights img {
+  filter: drop-shadow(1px 1px 1px var(--text-color));
+}
+
+.feature-higlights p {
+  line-height: 1.5;
 }
 
 .feature1,
@@ -257,9 +273,7 @@ p span {
 }
 
 .footer-content {
-  position: relative;
-  top: 60px;
-  margin: 0 30%;
+  margin: 60px 30% 0 30%;
 }
 
 footer img {
@@ -281,8 +295,8 @@ footer img {
   margin-bottom: 8px;
 }
 
-.menu-bold {
-  font-weight: 500 !important;
+.footer-content ul .menu-bold {
+  font-weight: 500;
 }
 
 .android,
@@ -303,17 +317,20 @@ footer img {
 }
 
 .android::before {
-  background-image: url('../img/android.png');
+  background-image: url("../img/android.png");
 }
 
 .ios:before {
-  background-image: url('../img/ios.png');
+  background-image: url("../img/ios.png");
 }
 
 .footer p {
   position: relative;
   text-align: center;
-  top: 178px;
+  bottom: 0;
+  margin-top: 100px;
+  font-size: 0.92em;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 767px) {
@@ -356,7 +373,7 @@ footer img {
     height: 30px;
     border: none;
     border-radius: 5px;
-    background-image: url('../img/search.png');
+    background-image: url("../img/search.png");
     background-repeat: no-repeat;
     background-position: 150px;
     text-indent: 10px;
@@ -378,7 +395,8 @@ footer img {
   }
 
   .hero-banner {
-    background-image: url(../img/hero-image.jpg);
+    background-image: url("../img/hero-image.jpg");
+    height: 1000px;
   }
 
   .button-herobanner {
@@ -398,7 +416,7 @@ footer img {
   .feature2,
   .feature3 {
     width: 190px;
-    margin-top: 300px;
+    margin-top: 250px;
     display: block;
   }
 
@@ -408,7 +426,7 @@ footer img {
 
   .footer-content {
     display: flex;
-    margin: 0;
+    margin: 60px 0 0 0;
     gap: 120px;
   }
 

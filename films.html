@@ -3,22 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Independent films" />
+    <meta name="description" content="SquareEyes is a website for enthusiasts of independent films. Buy films from independent creators. Upload your independent films to the site for sale."/>
     <meta name="keywords" content="Video, Indie, Inspiring, Film page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/films.css" />
@@ -29,26 +20,17 @@
       <div class="container">
         <nav class="navigation">
           <div class="mobile-nav">
-            <a href="/" aria-label="Home"
-              ><img
-                src="./img/mobil-logo.png"
-                alt="Square Eyes logo mobile"
-                class="logo-mobile"
-            /></a>
-
+            <a href="./" aria-label="Home">
+              <img src="./img/mobil-logo.png" alt="Square Eyes logo mobile" class="logo-mobile"/>
+            </a>
             <a href="./search.html">
-              <img
-                src="./img/search.svg"
-                alt="search logo mobile"
-                class="search-logo"
-            /></a>
-
+              <img src="./img/search.svg" alt="search logo mobile" class="search-logo"/>
+            </a>
             <label for="hamburger-menu">
               <span class="sr-only"> Hamburger menu</span>
               <i class="fas fa-bars"></i>
             </label>
             <input id="hamburger-menu" type="checkbox" />
-
             <ul class="app-navigation-drawer">
               <li>
                 <a href="./films.html">Films</a>
@@ -69,14 +51,9 @@
               </li>
             </ul>
           </div>
-
-          <a href="/" aria-label="Home"
-            ><img
-              src="./img/logo.png"
-              alt="Square Eyes logo desktop"
-              class="logo-desktop"
-          /></a>
-
+          <a href="./" aria-label="Home">
+            <img src="./img/logo.png" alt="Square Eyes logo desktop" class="logo-desktop"/>
+          </a>
           <div class="film-upload">
             <ul class="main-nav">
               <li>
@@ -87,23 +64,16 @@
               </li>
             </ul>
           </div>
-
           <div>
             <ul class="search-desktop">
               <li>
                 <a href="./search.html">
                   <label for="search" class="search-label">Search</label>
-                  <input
-                    id="search"
-                    type="text"
-                    class="search"
-                    placeholder=""
-                    name="search"
-                /></a>
+                  <input id="search" type="text" class="search" placeholder="" name="search"/>
+                </a>
               </li>
             </ul>
           </div>
-
           <div class="login-signup">
             <ul>
               <li>
@@ -120,7 +90,6 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="films">
         <div class="container">
@@ -137,161 +106,145 @@
                   <li>Documentary</li>
                 </ul>
               </div>
-
               <div class="film-sort">
                 <p>Sort by:</p>
-                <form action="POST" class="select-menu">
-                  <select name="genre" id="genre">
-                    <option value="latest">Latest</option>
-                    <option value="popular">Popular</option>
-                    <option value="rating">Rating</option>
-                  </select>
+                <form class="select-menu">
+                 <label for="genre">
+                   <select name="genre" id="genre">
+                     <option value="latest">Latest</option>
+                     <option value="popular">Popular</option>
+                     <option value="rating">Rating</option>
+                   </select>
+                 </label>
                 </form>
               </div>
             </div>
-
             <div class="film-elements">
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
               <div class="film-element">
-                <img
-                  src="./img/film-thumbnail-mobile.jpg"
-                  alt="Film thumbnail"
-                  class="film-thumbnail"
-                />
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
                 <h2>A Day in the Sun</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <h3>Producer: <a href="#" class="links">John Doe</a></h3>
                 <h4>15 USD</h4>
-                <a href="./purchase.html"
-                  ><button class="button">Buy</button></a
-                >
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
+              </div>
+              <div class="film-element">
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Producer: <a href="#" class="links">John Doe</a></h3>
+                <h4>15 USD</h4>
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
+              </div>
+              <div class="film-element">
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Producer: <a href="#" class="links">John Doe</a></h3>
+                <h4>15 USD</h4>
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
+              </div>
+              <div class="film-element">
+                <img src="./img/film-thumbnail-mobile.jpg" alt="Film thumbnail" class="film-thumbnail"/>
+                <h2>A Day in the Sun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Producer: <a href="#" class="links">John Doe</a></h3>
+                <h4>15 USD</h4>
+                <a href="./purchase.html">
+                  <button class="button">Buy</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -302,21 +255,18 @@
             <li>About</li>
             <li>Contact</li>
           </ul>
-
           <ul>
             <li class="menu-bold">Connect</li>
             <li>Facebook</li>
             <li>LinkedIn</li>
             <li>Instagram</li>
           </ul>
-
           <ul>
             <li class="menu-bold">Download</li>
             <li class="android">Android</li>
             <li class="ios">iOS</li>
           </ul>
         </div>
-
         <p>This website was created for educational purpose only</p>
       </div>
     </footer>

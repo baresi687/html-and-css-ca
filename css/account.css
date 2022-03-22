@@ -37,7 +37,7 @@
 }
 
 .producer-background {
-  background-image: url(../img/producer-background-img.jpg);
+  background-image: url("../img/producer-background-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;

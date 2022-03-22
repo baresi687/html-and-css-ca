@@ -87,7 +87,7 @@
   }
 
   .film-element img {
-    content: url(../img/film-thumbnail.jpg);
+    content: url("../img/film-thumbnail.jpg");
   }
 
   .film-element button {

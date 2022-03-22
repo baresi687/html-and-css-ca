@@ -93,11 +93,13 @@ with pseudo after. I could not get the border to get below them with z-index */
 .payment-options div input {
   position: relative;
   left: 22px;
+  cursor: pointer;
 }
 
 .payment-selection label {
   position: initial;
   display: block;
+  cursor: pointer;
 }
 
 .vipps-info {
