@@ -121,13 +121,13 @@ with pseudo after. I could not get the border to get below them with z-index */
     position: relative;
     margin-top: 20px;
   }
+
   .navigation {
-    border-bottom: 1px solid #706f6f;
-    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d8d8;
   }
 
   .footer-content {
-    border-top: 1px solid #706f6f;
+    border-top: 1px solid #d9d8d8;
     padding-top: 50px;
   }
 

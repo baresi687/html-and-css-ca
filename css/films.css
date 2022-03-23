@@ -46,18 +46,19 @@
 
 @media screen and (min-width: 767px) {
   .navigation {
-    border-bottom: 1px solid #706f6f;
-    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d8d8;
   }
 
   .footer-content {
-    border-top: 1px solid #706f6f;
+    border-top: 1px solid #d9d8d8;
     padding-top: 50px;
   }
 
   .films {
     position: inherit;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .film-genres ul li {
