@@ -1,5 +1,6 @@
 .page-heading {
   text-align: center;
+  margin-top: 60px;
 }
 
 .checkout-process {
@@ -29,8 +30,6 @@
   position: relative;
   top: -18px;
 }
-
-
 
 /* My attempt at making a border between the checkout flow icons below,
 with pseudo after. I could not get the border to get below them with z-index */

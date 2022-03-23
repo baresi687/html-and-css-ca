@@ -10,6 +10,7 @@
 
 a:hover {
   text-decoration: underline;
+  text-decoration-thickness: .145em;
   text-underline-offset: 4px;
 }
 
