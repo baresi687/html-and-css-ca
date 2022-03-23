@@ -51,7 +51,7 @@ header {
   padding: 20px 30px;
   background-color: var(--body-background-color);
   list-style: none;
-  height: 362px;
+  height: 380px;
   transition: transform 0.3s ease-out;
   transform: translateX(-170%);
   box-shadow: 0 0 2px 2px var(--body-background-color);
@@ -73,7 +73,7 @@ header {
   text-decoration: none;
   color: var(--button-links-color);
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .app-navigation-drawer button {
