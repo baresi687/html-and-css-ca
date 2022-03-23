@@ -123,7 +123,7 @@ header {
 }
 
 .main-nav {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .search-logo {
@@ -134,7 +134,7 @@ header {
 }
 
 .links.log-in {
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .button a {
@@ -345,14 +345,19 @@ footer img {
     height: auto;
   }
 
-  header li {
+  header ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /*header li {
     margin-right: 40px;
     display: inline-block;
   }
 
   header ul {
     display: inline-block;
-  }
+  }*/
 
   .mobile-nav {
     display: none;
@@ -362,12 +367,27 @@ footer img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
   }
 
   .logo-desktop {
     display: inline-block;
-    margin-top: 18px;
-    width: 216px;
+    width: 145px;
+  }
+
+  .search-desktop li a {
+    text-decoration: none;
+  }
+
+  .logo-desktop {
+    display: initial;
+  }
+
+  .main-nav {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 2em;
   }
 
   .search {
@@ -375,21 +395,27 @@ footer img {
     width: 100%;
     height: 30px;
     border: none;
+    margin: 0;
+    padding: 0;
     border-radius: 5px;
     background-image: url("../img/search.png");
     background-repeat: no-repeat;
-    background-position: 150px;
-    text-indent: 10px;
+    background-position: 8px;
+    text-indent: 32px;
   }
 
-  .main-nav,
-  .about {
-    display: flex;
+  .links.about {
+    font-size: 0.9em;
   }
 
-  .login-signup,
-  .login-signup div {
-    display: inline-block;
+  .login-signup {
+    display: inline-flex;
+    gap: 2em;
+  }
+
+  .login-signup div{
+    display: inline-flex;
+    align-items: center;
   }
 
   .button-signup {
