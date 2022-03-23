@@ -8,6 +8,11 @@
   --icon-graphic-color: #706f6f;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 body {
   font-family: var(--font-family-paragraph);
   background: var(--body-background-color);
@@ -42,7 +47,7 @@ header {
   padding: 20px;
   background-color: var(--body-background-color);
   list-style: none;
-  height: 210px;
+  height: 240px;
   transition: transform 0.3s ease-out;
   transform: translateX(-170%);
 }
@@ -100,14 +105,6 @@ header {
   cursor: pointer;
 }
 
-/* For accessibility. Hidden */
-.search-label {
-  position: absolute;
-  top: 0;
-  right: 360px;
-  color: var(--body-background-color);
-}
-
 .links {
   font-weight: 700;
   text-decoration: none;
@@ -134,7 +131,7 @@ header {
 }
 
 .links.log-in {
-  padding-right: 8px;
+  padding-right: 1em;
 }
 
 .button a {
@@ -167,7 +164,7 @@ button {
 }
 
 .hero-banner {
-  height: 1070px; /*960*/
+  height: 1070px;
   background-image: url("../img/hero-image-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,6 +333,10 @@ footer img {
   font-weight: 500;
 }
 
+.no-link {
+  cursor: default;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     max-width: 1110px;
@@ -349,15 +350,6 @@ footer img {
     list-style: none;
     padding: 0;
   }
-
-  /*header li {
-    margin-right: 40px;
-    display: inline-block;
-  }
-
-  header ul {
-    display: inline-block;
-  }*/
 
   .mobile-nav {
     display: none;
@@ -410,7 +402,7 @@ footer img {
 
   .login-signup {
     display: inline-flex;
-    gap: 2em;
+    gap: 3em;
   }
 
   .login-signup div{
