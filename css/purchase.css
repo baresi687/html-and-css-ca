@@ -1,27 +1,34 @@
 .page-heading {
   text-align: center;
+  margin-top: 60px;
 }
 
 .checkout-process {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.checkout-process > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  gap: 20px;
+}
+
+.checkout-process img {
+  width: 30px;
 }
 
 .line {
   flex-grow: 1;
-  border-bottom: 1px solid var(--icon-graphic-color);
-  margin: 15px;
-}
-
-.payment-flow {
-  display: flex;
-  justify-content: space-between;
-}
-
-.payment-flow p {
-  margin-top: 20px;
-  font-weight: 700;
+  border-bottom: 1px solid #706f6f7d;
+  margin: -8px;
+  position: relative;
+  top: -18px;
 }
 
 /* My attempt at making a border between the checkout flow icons below,

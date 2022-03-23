@@ -10,6 +10,7 @@
 
 a:hover {
   text-decoration: underline;
+  text-decoration-thickness: .145em;
   text-underline-offset: 4px;
 }
 
@@ -40,27 +41,30 @@ header {
 }
 
 .app-navigation-drawer {
-  position: relative;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  left: -30px;
   display: block;
   z-index: 5;
   margin: 0;
-  padding: 20px;
+  padding: 20px 30px;
   background-color: var(--body-background-color);
   list-style: none;
-  height: 240px;
+  height: 362px;
   transition: transform 0.3s ease-out;
   transform: translateX(-170%);
+  box-shadow: 0 0 2px 2px var(--body-background-color);
+  border-radius: 5px;
 }
 
 .app-navigation-drawer li {
-  margin-bottom: 10px;
+  padding: 20px 0;
   border-bottom: 1px solid #d9d8d8;
-  padding-bottom: 10px;
 }
 
 .app-navigation-drawer li:last-child {
   border-bottom: none;
-  padding-top: 10px;
 }
 
 .app-navigation-drawer li a {
@@ -69,6 +73,7 @@ header {
   text-decoration: none;
   color: var(--button-links-color);
   font-weight: 700;
+  font-size: 1.1em;
 }
 
 .app-navigation-drawer button {
