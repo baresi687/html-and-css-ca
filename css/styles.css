@@ -102,12 +102,16 @@ header {
 }
 
 .mobile-nav label {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: #706f6f;
   position: absolute;
   right: 0;
   margin-top: 2%;
   cursor: pointer;
+}
+
+.mobile-nav .fas.fa-bars {
+  vertical-align: middle;
 }
 
 .links {
@@ -131,8 +135,8 @@ header {
 .search-logo {
   width: 32px;
   position: absolute;
-  right: 35px;
-  margin-top: 4px;
+  right: 40px;
+  top: 12px;
 }
 
 .links.log-in {
