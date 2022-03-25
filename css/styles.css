@@ -349,7 +349,7 @@ footer img {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 109px;
+  left: -2em;
 }
 
 .android::before {
@@ -484,7 +484,7 @@ footer img {
   .footer-content {
     display: flex;
     margin: 60px 0 0 0;
-    gap: 120px;
+    gap: 11%;
   }
 
   .footer ul {
@@ -493,10 +493,5 @@ footer img {
 
   footer img {
     height: 85px;
-  }
-
-  .android:before,
-  .ios:before {
-    right: 77px;
   }
 }
