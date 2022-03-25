@@ -362,6 +362,8 @@ footer ul {
 .footer ul li a {
   text-decoration: none;
   color: #666666;
+  width: 100%;
+  display: inline-block;
 }
 
 .footer ul li a:hover {
