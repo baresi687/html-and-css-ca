@@ -8,7 +8,7 @@
   --icon-graphic-color: #706f6f;
 }
 
-a:hover {
+a:hover, .app-navigation-drawer a:hover {
   text-decoration: underline;
   text-decoration-thickness: .145em;
   text-underline-offset: 4px;
