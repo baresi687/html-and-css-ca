@@ -306,6 +306,7 @@ p span {
 .footer-content > div {
   padding: 8px 0;
   position: relative;
+  z-index: 2;
 }
 
 footer img {
@@ -324,7 +325,7 @@ footer ul {
   padding: 0;
   line-height: 1.6;
   opacity: 0;
-  transition: margin .2s ease-in-out;
+  transition: margin .6s, opacity .7s;
 }
 
 .show {
