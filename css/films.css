@@ -34,14 +34,32 @@
 
 .film-element {
   margin-top: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 0 var(--icon-graphic-color);
+  padding: 8px;
+}
+
+.film-element h2, .film-element h3, .film-element p {
+  text-align: center;
+}
+
+.stars {
+  margin: auto;
+  width: fit-content;
+  padding: 16px 0;
 }
 
 .film-element img {
   width: 100%;
 }
 
-.film-element h3 {
-  font-weight: 400;
+i.fa-solid.fa-star {
+  color: #bcbcbc;
+  font-size: 1.3em;
+}
+
+.checked-star {
+  color: #d8c447 !important;
 }
 
 @media screen and (min-width: 767px) {
@@ -87,13 +105,13 @@
     position: relative;
   }
 
-  .film-element img {
+  /*.film-element img {
     content: url("../img/film-thumbnail.jpg");
-  }
+  }*/
 
-  .film-element button {
+  /*.film-element button {
     width: 50%;
     position: absolute;
     left: 0;
-  }
+  }*/
 }
