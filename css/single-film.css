@@ -1,0 +1,50 @@
+.film-container {
+  margin: 40px 0;
+}
+
+main a.links {
+  margin-top: 30px;
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+.loader {
+  margin: 24px 0;
+}
+
+@media screen and (min-width: 767px) {
+  .navigation {
+    border-bottom: 1px solid #d9d8d8;
+  }
+
+  .footer-content {
+    border-top: 1px solid #d9d8d8;
+    padding-top: 50px;
+  }
+
+  .film-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .film-container > div {
+    flex-basis: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .film-container .button {
+    width: 300px;
+  }
+}
