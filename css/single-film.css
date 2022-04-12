@@ -2,8 +2,8 @@
   margin: 40px 0;
 }
 
-main a.links {
-  margin-top: 30px;
+.back-to-film {
+  margin-top: 60px;
   display: block;
 }
 
@@ -13,6 +13,14 @@ img {
 
 .loader {
   margin: 24px 0;
+}
+
+.api-error {
+  margin-top: 16px;
+}
+
+.review {
+  padding-left: 16px;
 }
 
 @media screen and (min-width: 767px) {
@@ -46,5 +54,6 @@ img {
 
   .film-container .button {
     width: 300px;
+    margin-top: 8px;
   }
 }

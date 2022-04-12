@@ -1,5 +1,5 @@
 const filmElementContainer = document.querySelector(".film-elements");
-const url = "http://cmsca.local/wp-json/wc/store/products/";
+const url = "https://hreinngylfason.site/cmsca/wp-json/wc/store/products/";
 let ratings = [];
 
 async function getFilms() {
@@ -35,7 +35,6 @@ async function getFilms() {
                                              <button class="button">Details</button>
                                            </a>
                                          </div>`;
-
     })
 
     const filmElement = document.querySelectorAll(".film-element");

@@ -410,10 +410,10 @@ footer ul {
 }
 
 .loader {
-  height: 64px;
-  width: 64px;
-  border: 8px solid white;
-  border-top: 8px solid var(--button-links-color);
+  height: 48px;
+  width: 48px;
+  border: 6px solid white;
+  border-top: 6px solid var(--button-links-color);
   border-radius: 50%;
   animation: rotate .7s linear infinite;
 }

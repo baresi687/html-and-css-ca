@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const filmId = params.get("film");
-const url = `http://cmsca.local/wp-json/wc/store/products/${filmId}`;
+const url = `https://hreinngylfason.site/cmsca/wp-json/wc/store/products/${filmId}`;
 const singleFilmContainer = document.querySelector(".single-film");
 
 async function getSingleFilm() {
@@ -28,6 +28,9 @@ async function getSingleFilm() {
                                              <i class="fa-solid fa-star"></i>
                                              <i class="fa-solid fa-star"></i>
                                              <i class="fa-solid fa-star"></i>
+                                             <span class="review">
+                                               <a href="#" class="links">${singleFilm.review_count} review(s)</a>
+                                             </span>
                                            </div>
                                            <h2>$ ${price}.00</h2>
                                            <p>${singleFilm.description}</p>
@@ -41,7 +44,10 @@ async function getSingleFilm() {
     }
 
   } catch (error) {
-
+    singleFilmContainer.innerHTML += `<div class="api-error">
+                                         Something went wrong..
+                                          <span>Please try again later.</span
+                                       </div>`
   } finally {
     document.querySelector(".loader").style.display = "none";
   }
