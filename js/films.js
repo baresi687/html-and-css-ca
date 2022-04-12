@@ -7,9 +7,8 @@ async function getFilms() {
     const response = await fetch(url);
     const responseJSON = await response.json();
 
-    responseJSON.forEach(function (item)  {
+    responseJSON.forEach(function (item, index)  {
       const filmId = item.id;
-      console.log(filmId)
       const priceSlice = item.prices.price;
       const price = priceSlice.slice(0, priceSlice.length - 2);
       const ratingSlice = item.average_rating;
@@ -17,7 +16,7 @@ async function getFilms() {
       const rating = Number(ratingString);
       ratings.push(rating);
 
-      filmElementContainer.innerHTML += `<div class="film-element">
+      filmElementContainer.innerHTML += `<div class="film-element index-${index}">
                                            <a href="./single-film.html?film=${filmId}">
                                              <img src="${item.images[0].thumbnail}" alt="${item.images[0].alt}" class="film-thumbnail"/>
                                            </a> 
@@ -38,17 +37,19 @@ async function getFilms() {
     })
 
     const filmElement = document.querySelectorAll(".film-element");
+
     filmElement.forEach((film) => {
-      const stars = film.querySelectorAll(".stars i")
-      ratings.forEach((ratingItem) => {
-        for (let i = 0; i < ratingItem; i++) {
-          stars[i].classList.add("checked-star");
+      const stars = film.querySelectorAll(".stars i");
+      for (let i = 0; i < ratings.length; i++) {
+        for (let j = 0; j < ratings[i]; j++) {
+          if (film.classList.contains(`index-${i}`)) {
+            stars[j].classList.add("checked-star");
+          }
         }
-      })
+      }
     })
 
   } catch (error) {
-    console.log(error);
     filmElementContainer.innerHTML += `<div class="api-error">
                                          Something went wrong..
                                           <span>Please try again later.</span
