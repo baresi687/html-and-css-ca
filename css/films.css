@@ -32,6 +32,40 @@
   width: 100px;
 }
 
+.loader {
+  height: 64px;
+  width: 64px;
+  margin: 16px 0;
+  box-sizing: border-box;
+  border: 8px solid white;
+  border-top: 8px solid var(--button-links-color);
+  border-radius: 50%;
+  animation: rotate .7s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.api-error {
+  width: fit-content;
+  padding: 16px;
+  background: #f6dcdd;
+  color: #c9646a;
+  border-radius: 10px;
+  font-weight: 500;
+  /* box-sizing: border-box; */
+}
+.api-error span {
+  display: block;
+  margin-top: 4px;
+}
+
 .film-element {
   margin-top: 40px;
   box-sizing: border-box;

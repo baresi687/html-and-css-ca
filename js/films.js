@@ -49,9 +49,13 @@ async function getFilms() {
 
   } catch (error) {
     console.log(error);
+    filmElementContainer.innerHTML += `<div class="api-error">
+                                         Something went wrong..
+                                          <span>Please try again later.</span
+                                       </div>`
 
   } finally {
-
+    document.querySelector(".loader").style.display = "none";
   }
 }
 
