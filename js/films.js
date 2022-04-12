@@ -28,7 +28,7 @@ async function getFilms() {
                                            </div>
                                            <h3>$ ${price}.00</h3>
                                            <a href="./purchase.html">
-                                             <button class="button">More</button>
+                                             <button class="button">Details</button>
                                            </a>
                                          </div>`;
 

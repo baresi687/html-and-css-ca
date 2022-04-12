@@ -35,8 +35,8 @@
 .film-element {
   margin-top: 40px;
   box-sizing: border-box;
-  box-shadow: 0 0 5px 0 var(--icon-graphic-color);
-  padding: 8px;
+  box-shadow: 0 0 5px 0 #706f6f47;
+  padding: 16px;
 }
 
 .film-element h2, .film-element h3, .film-element p {
