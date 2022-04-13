@@ -5,6 +5,7 @@
 .back-to-film {
   margin-top: 60px;
   display: block;
+  font-size: 1.2em;
 }
 
 img {
@@ -19,8 +20,20 @@ img {
   margin-top: 16px;
 }
 
-.review {
+.review, .film-reviews .stars {
   padding-left: 16px;
+}
+
+.single-review i.fa-solid.fa-star {
+  font-size: .9em;
+}
+
+.single-review {
+  max-width: 400px;
+  box-shadow: 0 0 5px 0 #706f6f47;
+  padding: 16px;
+  border-radius: 5px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 767px) {

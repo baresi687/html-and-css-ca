@@ -12,7 +12,6 @@ async function getSingleFilm() {
     const ratingSlice = singleFilm.average_rating;
     const ratingString = ratingSlice.slice(0, ratingSlice.length - 3);
     const rating = Number(ratingString);
-    console.log(rating);
 
     document.querySelector("title").innerHTML += singleFilm.name;
 
@@ -23,25 +22,23 @@ async function getSingleFilm() {
                                         <div class="film-description">
                                           <h1>${singleFilm.name}</h1>
                                           <div class="stars">
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <span class="review">
-                                               <a href="#" class="links">${singleFilm.review_count} review(s)</a>
-                                             </span>
-                                           </div>
-                                           <h2>$ ${price}.00</h2>
-                                           <p>${singleFilm.description}</p>
-                                           <button class="button">Buy Now</button>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="review">
+                                              <a href="#film-reviews" class="links">${singleFilm.review_count} review(s)</a>
+                                            </span>
+                                          </div>
+                                          <h2>$ ${price}.00</h2>
+                                          ${singleFilm.description}
+                                          <button class="button">Buy Now</button>
                                         </div>
                                       </div>`;
 
-    const stars = document.querySelectorAll(".stars i");
-    for (let i = 0; i < rating; i++) {
-      stars[i].classList.add("checked-star");
-    }
+    const filmDescription = document.querySelector(".film-description").classList.value;
+    getStars(filmDescription, rating);
 
   } catch (error) {
     singleFilmContainer.innerHTML += `<div class="api-error">
@@ -54,3 +51,50 @@ async function getSingleFilm() {
 }
 
 getSingleFilm();
+
+const reviewUrl = `https://hreinngylfason.site/cmsca/wp-json/wc/store/products/reviews?product_id=${filmId}`
+const filmReviews = document.querySelector(".film-reviews");
+
+async function getReviews() {
+  try {
+    const response = await fetch(reviewUrl);
+    const responseJSON = await response.json();
+
+    responseJSON.forEach((reviewItem, index) => {
+      filmReviews.innerHTML += `<div class="single-review index-${index}">
+                                  <strong>${reviewItem.reviewer} - </strong>
+                                  <span>${reviewItem.formatted_date_created}</span>                                  
+                                  <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                  </span>
+                                  ${reviewItem.review}
+                                </div>`
+
+      const rating = reviewItem.rating;
+      const filmDescription = document.querySelector(`.single-review.index-${index}`).classList[1];
+      getStars(filmDescription, rating)
+    })
+
+  } catch (error) {
+    console.log(error)
+    filmReviews.innerHTML += `<div class="api-error">
+                                Something went wrong..
+                                <span>Please try again later.</span
+                              </div>`
+  } finally {
+
+  }
+}
+
+getReviews();
+
+function getStars(elem, rating ) {
+  const stars = document.querySelectorAll( `.${elem} .stars i`);
+  for (let i = 0; i < rating; i++) {
+    stars[i].classList.add("checked-star");
+  }
+}
