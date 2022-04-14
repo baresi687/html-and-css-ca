@@ -19,7 +19,7 @@ async function getSingleFilm() {
                                         <div class="film-poster">
                                           <img src="${singleFilm.images[0].src}" alt="${singleFilm.images[0].alt}">
                                         </div>
-                                        <div class="film-description">
+                                        <div class="film-information">
                                           <h1>${singleFilm.name}</h1>
                                           <div class="stars">
                                             <i class="fa-solid fa-star"></i>
@@ -32,13 +32,18 @@ async function getSingleFilm() {
                                             </span>
                                           </div>
                                           <h2>$ ${price}.00</h2>
-                                          ${singleFilm.description}
+                                          ${singleFilm.short_description}
                                           <button class="button">Buy Now</button>
                                         </div>
                                       </div>`;
 
-    const filmDescription = document.querySelector(".film-description").classList.value;
-    getStars(filmDescription, rating);
+    const filmInformation = document.querySelector(".film-information").classList.value;
+    getStars(filmInformation, rating);
+
+    const filmFullDescription = document.querySelector(".film-full-description");
+    filmFullDescription.innerHTML += `<h3>Description</h3>
+                                      ${singleFilm.description}`
+
 
   } catch (error) {
     singleFilmContainer.innerHTML += `<div class="api-error">
@@ -75,8 +80,8 @@ async function getReviews() {
                                 </div>`
 
       const rating = reviewItem.rating;
-      const filmDescription = document.querySelector(`.single-review.index-${index}`).classList[1];
-      getStars(filmDescription, rating)
+      const singleReview = document.querySelector(`.single-review.index-${index}`).classList[1];
+      getStars(singleReview, rating)
     })
 
   } catch (error) {

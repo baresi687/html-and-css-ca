@@ -432,13 +432,13 @@ footer ul {
   margin-top: 4px;
 }
 
-i.fa-solid.fa-star {
+.stars i {
   color: #bcbcbc;
   font-size: 1.3em;
 }
 
-.checked-star {
-  color: #d8c447 !important;
+.stars .checked-star {
+  color: #eaa909;
 }
 
 @keyframes rotate {
