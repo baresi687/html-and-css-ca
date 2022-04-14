@@ -21,7 +21,7 @@ async function getFilms() {
                                              <img src="${item.images[0].thumbnail}" alt="${item.images[0].alt}" class="film-thumbnail"/>
                                            </a> 
                                            <h2>${item.name}</h2>
-                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                                          
+                                           ${item.short_description}                                          
                                            <div class="stars">
                                              <i class="fa-solid fa-star"></i>
                                              <i class="fa-solid fa-star"></i>
