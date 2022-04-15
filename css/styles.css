@@ -425,6 +425,7 @@ footer ul {
   color: #c9646a;
   border-radius: 10px;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .api-error span {

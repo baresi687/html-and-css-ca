@@ -1,3 +1,5 @@
+import {errorMessage} from "./handlers/message.js";
+
 const params = new URLSearchParams(window.location.search);
 const filmId = params.get("film");
 const url = `https://hreinngylfason.site/cmsca/wp-json/wc/store/products/${filmId}`;
@@ -46,10 +48,8 @@ async function getSingleFilm() {
 
 
   } catch (error) {
-    singleFilmContainer.innerHTML += `<div class="api-error">
-                                         Something went wrong..
-                                          <span>Please try again later.</span
-                                       </div>`
+    singleFilmContainer.innerHTML += errorMessage();
+
   } finally {
     document.querySelector(".loader").style.display = "none";
   }
@@ -64,6 +64,7 @@ async function getReviews() {
   try {
     const response = await fetch(reviewUrl);
     const responseJSON = await response.json();
+    filmReviews.innerHTML = `<h3>Reviews</h3>`;
 
     responseJSON.forEach((reviewItem, index) => {
       filmReviews.innerHTML += `<div class="single-review index-${index}">
@@ -85,11 +86,9 @@ async function getReviews() {
     })
 
   } catch (error) {
-    console.log(error)
-    filmReviews.innerHTML += `<div class="api-error">
-                                Something went wrong..
-                                <span>Please try again later.</span
-                              </div>`
+    filmReviews.innerHTML = `<h3>Reviews</h3>`;
+    filmReviews.innerHTML += errorMessage("api-error", "Something went wrong when fetching reviews");
+
   } finally {
 
   }

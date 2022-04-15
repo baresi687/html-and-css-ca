@@ -1,3 +1,5 @@
+import {errorMessage} from "./handlers/message.js";
+
 const filmElementContainer = document.querySelector(".film-elements");
 const url = "https://hreinngylfason.site/cmsca/wp-json/wc/store/products/";
 let ratings = [];
@@ -50,10 +52,7 @@ async function getFilms() {
     })
 
   } catch (error) {
-    filmElementContainer.innerHTML += `<div class="api-error">
-                                         Something went wrong..
-                                          <span>Please try again later.</span
-                                       </div>`
+    filmElementContainer.innerHTML += errorMessage();
 
   } finally {
     document.querySelector(".loader").style.display = "none";
