@@ -88,9 +88,6 @@ async function getReviews() {
   } catch (error) {
     filmReviews.innerHTML = `<h3>Reviews</h3>`;
     filmReviews.innerHTML += errorMessage("api-error", "Something went wrong when fetching reviews");
-
-  } finally {
-
   }
 }
 

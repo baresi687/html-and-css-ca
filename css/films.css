@@ -26,10 +26,12 @@
   font-weight: 100;
 }
 
-#genre {
+#sort {
   border: none;
   border-radius: 5px;
-  width: 100px;
+  width: 164px;
+  height: 32px;
+  text-indent: 4px;
 }
 
 .film-element {

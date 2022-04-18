@@ -419,13 +419,14 @@ footer ul {
 }
 
 .api-error {
-  width: fit-content;
-  padding: 16px;
+  width: 100%;
+  margin: 32px 0;
+  padding: 24px;
   background: #f6dcdd;
   color: #c9646a;
   border-radius: 10px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .api-error span {
@@ -600,5 +601,9 @@ footer ul {
     margin: 0;
     width: initial;
     display: block;
+  }
+
+  .api-error {
+    width: fit-content;
   }
 }
