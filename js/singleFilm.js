@@ -33,8 +33,7 @@ async function getSingleFilm() {
                                               <a href="#film-reviews" class="links">${singleFilm.review_count} review(s)</a>
                                             </span>
                                           </div>
-                                          <h2>$ ${price}.00</h2>
-                                          ${singleFilm.short_description}
+                                          <h2>$ ${price}.00</h2>                                          
                                           <p>Director: <a href="#" class="links">John Doe</a></p>
                                           <a href="./purchase.html">
                                             <button class="button">Buy Now</button>
