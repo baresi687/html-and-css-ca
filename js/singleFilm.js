@@ -35,6 +35,7 @@ async function getSingleFilm() {
                                           </div>
                                           <h2>$ ${price}.00</h2>
                                           ${singleFilm.short_description}
+                                          <p>Director: <a href="#" class="links">John Doe</a></p>
                                           <button class="button">Buy Now</button>
                                         </div>
                                       </div>`;
