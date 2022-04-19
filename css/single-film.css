@@ -1,5 +1,7 @@
 .film-container {
   margin: 40px 0;
+  box-shadow: 0 0 5px 0 #706f6f47;
+  padding: 16px;
 }
 
 .back-to-film {
@@ -59,6 +61,8 @@ img {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    box-shadow: none;
+    padding: revert;
   }
 
   .film-container > div {
