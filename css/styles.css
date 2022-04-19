@@ -409,6 +409,49 @@ footer ul {
   cursor: default;
 }
 
+.loader {
+  height: 48px;
+  width: 48px;
+  border: 6px solid white;
+  border-top: 6px solid var(--button-links-color);
+  border-radius: 50%;
+  animation: rotate .7s linear infinite;
+}
+
+.api-error {
+  width: 100%;
+  margin: 32px 0;
+  padding: 24px;
+  background: #f6dcdd;
+  color: #c9646a;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.api-error span {
+  display: block;
+  margin-top: 4px;
+}
+
+.stars i {
+  color: #b4b3b3;
+  font-size: 1.3em;
+}
+
+.stars .checked-star {
+  color: #404a6fed;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (min-width: 767px) {
   .container {
     max-width: 1110px;
@@ -558,5 +601,9 @@ footer ul {
     margin: 0;
     width: initial;
     display: block;
+  }
+
+  .api-error {
+    width: fit-content;
   }
 }
