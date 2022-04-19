@@ -1,6 +1,7 @@
 import {errorMessage} from "./handlers/message.js";
 
 const sortFilms = document.querySelector("#sort");
+const filterFilms = document.querySelector("#filter");
 const filmElementContainer = document.querySelector(".film-elements");
 const url = "https://hreinngylfason.site/cmsca/wp-json/wc/store/products/";
 let ratings = [];
@@ -12,6 +13,7 @@ async function getFilms() {
   try {
     const response = await fetch(url);
     const responseJSON = await response.json();
+
     filmElementContainer.innerHTML = "";
     getSortedFilms(responseJSON)
 
@@ -35,6 +37,16 @@ async function getFilms() {
       if (currentValue === "latest") {
         getFilms()
       }
+    })
+
+    filterFilms.addEventListener("keyup", function (event) {
+      filmElementContainer.innerHTML = "";
+      ratings = [];
+      const currentValue = event.target.value.trim().toLowerCase();
+      const renderedFilm = responseJSON.filter(function (arr) {
+        return arr.name.toLowerCase().includes(currentValue);
+      })
+      getSortedFilms(renderedFilm);
     })
 
     function getSortedFilms(responseJSON) {

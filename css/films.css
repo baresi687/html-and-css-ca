@@ -20,18 +20,23 @@
 }
 
 .film-sort p,
-.select-menu {
+.select-menu, .filter, .filter p {
   display: inline-block;
   margin-right: 10px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
-#sort {
+#sort, #filter {
   border: none;
   border-radius: 5px;
   width: 164px;
   height: 32px;
   text-indent: 4px;
+}
+
+#filter {
+  margin-left: 15px;
+  width: 159px;
 }
 
 .film-element {
@@ -86,12 +91,22 @@
   .film-elements {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 32px;
+    margin-top: 32px;
   }
 
   .film-element {
     flex-basis: 31.333333%;
     position: relative;
+    margin: 0;
+  }
+
+  .filter {
+    margin-left: 2em;
+  }
+
+  #filter {
+    margin: 0;
   }
 
 }
