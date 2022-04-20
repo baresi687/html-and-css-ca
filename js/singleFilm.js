@@ -22,7 +22,7 @@ async function getSingleFilm() {
                                           <img src="${singleFilm.images[0].src}" alt="${singleFilm.images[0].alt}">
                                         </div>
                                         <div class="film-information">
-                                          <h1>${singleFilm.name}</h1>
+                                          <h2>${singleFilm.name}</h2>
                                           <div class="stars">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -33,7 +33,8 @@ async function getSingleFilm() {
                                               <a href="#film-reviews" class="links">${singleFilm.review_count} review(s)</a>
                                             </span>
                                           </div>
-                                          <h2>$ ${price}.00</h2>                                          
+                                          <h3>$ ${price}.00</h3>
+                                          ${singleFilm.short_description}                                          
                                           <p>Director: <a href="#" class="links">John Doe</a></p>
                                           <a href="./purchase.html">
                                             <button class="button">Buy Now</button>
@@ -45,7 +46,7 @@ async function getSingleFilm() {
     getStars(filmInformation, rating);
 
     const filmFullDescription = document.querySelector(".film-full-description");
-    filmFullDescription.innerHTML += `<h3>Description</h3>
+    filmFullDescription.innerHTML += `<h4>Description</h4>
                                       ${singleFilm.description}`
 
 
@@ -66,7 +67,7 @@ async function getReviews() {
   try {
     const response = await fetch(reviewUrl);
     const responseJSON = await response.json();
-    filmReviews.innerHTML = `<h3>Reviews</h3>`;
+    filmReviews.innerHTML = `<h4>Reviews</h4>`;
 
     responseJSON.forEach((reviewItem, index) => {
       filmReviews.innerHTML += `<div class="single-review index-${index}">

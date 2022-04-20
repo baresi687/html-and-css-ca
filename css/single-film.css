@@ -22,6 +22,10 @@ img {
   margin-top: 16px;
 }
 
+.film-information p:first-of-type {
+  display: none;
+}
+
 .film-full-description p {
   max-width: 700px;
   line-height: 1.5;
@@ -72,6 +76,10 @@ img {
     justify-content: space-between;
   }
 
+  .film-information p:first-of-type {
+    display: block;
+  }
+
   .stars {
     margin: 8px 0;
   }
@@ -81,7 +89,7 @@ img {
     height: auto;
   }
 
-  h1 {
+  h2 {
     margin: 0;
   }
 
