@@ -594,6 +594,7 @@ footer ul {
 
   .show {
     padding: 0;
+    height: 0;
   }
 
   footer img {
