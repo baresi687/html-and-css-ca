@@ -60,23 +60,23 @@ async function getFilms() {
         ratings.push(rating);
 
         filmElementContainer.innerHTML += `<div class="film-element index-${index}">
-                                           <a href="./single-film.html?film=${filmId}">
-                                             <img src="${item.images[0].thumbnail}" alt="${item.images[0].alt}" class="film-thumbnail"/>
-                                           </a> 
-                                           <h2>${item.name}</h2>
-                                           ${item.short_description}                                          
-                                           <div class="stars">
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                             <i class="fa-solid fa-star"></i>
-                                           </div>
-                                           <h3>$ ${price}.00</h3>
-                                           <a href="./single-film.html?film=${filmId}">
-                                             <button class="button">Details</button>
-                                           </a>
-                                         </div>`;
+                                             <a href="./single-film.html?film=${filmId}">
+                                               <img src="${item.images[0].thumbnail}" alt="${item.images[0].alt}" class="film-thumbnail"/>
+                                             </a> 
+                                             <h2>${item.name}</h2>
+                                             ${item.short_description}                                          
+                                             <div class="stars">
+                                               <i class="fa-solid fa-star"></i>
+                                               <i class="fa-solid fa-star"></i>
+                                               <i class="fa-solid fa-star"></i>
+                                               <i class="fa-solid fa-star"></i>
+                                               <i class="fa-solid fa-star"></i>
+                                             </div>
+                                             <h3>$ ${price}.00</h3>
+                                             <a href="./single-film.html?film=${filmId}">
+                                               <button class="button">Details</button>
+                                             </a>
+                                           </div>`;
       })
 
       const filmElement = document.querySelectorAll(".film-element");
