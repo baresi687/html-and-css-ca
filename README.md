@@ -1,6 +1,6 @@
 # Square Eyes
 
-![image](/img/cross-course.jpg)
+<img src="/img/cross-course.jpg" width="500" alt="Square Eyes">
 
 My first project. Improved over cross courses.
 
