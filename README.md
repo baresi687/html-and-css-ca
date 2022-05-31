@@ -1,4 +1,4 @@
-# Square Eyes
+# Square Eyes - Connecting Film-Lovers
 
 <img src="/img/cross-course.jpg" width="600" alt="Square Eyes">
 
@@ -6,9 +6,13 @@ My first project. Improved over cross courses.
 
 ## Description
 
-The project entailed creating an independent video streaming website where users can purchase high-quality videos directly from the people who make them. 
+The project entailed creating an independent video streaming website where users can purchase high-quality videos directly from the people who make them.
 
-Using only HTML and CSS in the beginning.
+This project began originally in Design by building a working prototype. 
+<br>
+It then progressed by building it in HTML and CSS.
+<br>
+Through later courses I improved it with focus on JavaScript, Content Management Systems and Interaction Design. 
 
 Requirements of the project:
 
@@ -21,6 +25,7 @@ Requirements of the project:
 - HTML
 - CSS
 - JavaScript (Added later in cross courses)
+- Headless WordPress API (Added later in cross course)
 
 ## Deployed link
 
