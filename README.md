@@ -1,6 +1,6 @@
 # Square Eyes
 
-<img src="/img/cross-course.jpg" width="500" alt="Square Eyes">
+<img src="/img/cross-course.jpg" width="600" alt="Square Eyes">
 
 My first project. Improved over cross courses.
 
@@ -21,6 +21,10 @@ Requirements of the project:
 - HTML
 - CSS
 - JavaScript (Added later in cross courses)
+
+## Deployed link
+
+https://html-and-css-ca-hreinn.netlify.app/
 
 ## Contact
 
