@@ -1,6 +1,10 @@
 # Square Eyes - Connecting Film-Lovers
 
-<img src="/img/cross-course.jpg" width="600" alt="Square Eyes">
+<div>
+  <img src="/img/cross-course-mobile.jpg" height="500" alt="Square Eyes Mobile view">
+  &nbsp&nbsp&nbsp  
+  <img src="/img/cross-course-desktop.jpg" height="500" alt="Square Eyes Mobile Desktop view">
+</div>
 
 My first school project. Improved over cross courses.
 
