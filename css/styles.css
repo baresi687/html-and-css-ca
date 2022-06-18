@@ -236,6 +236,7 @@ h6 {
 .sign-up-heading {
   margin-bottom: 50px;
 }
+
 .page-heading {
   font-size: 3em;
 }
@@ -260,39 +261,26 @@ p span {
   display: block;
 }
 
-.content h3 {
-  color: #f2f2f2;
-  font-family: 'Heebo', sans-serif;
-  font-weight: 700;
-  font-size: 1.5em;
+.features {
+  margin-top: 80px;
+  display: flex;
+  gap: 1rem;
 }
 
-.feature-higlights {
-  position: relative;
-  display: inline;
-  justify-content: space-between;
-}
-
-.feature-higlights img {
+.features img {
   filter: drop-shadow(1px 1px 1px var(--text-color));
+  width: 64px;
+  height: 64px;
+  display: block;
 }
 
-.feature-higlights p {
+.features h3 {
+  font-size: 1.125rem;
+}
+
+.features p {
   line-height: 1.5;
-}
-
-.feature1,
-.feature2,
-.feature3 {
-  width: 190px;
-  margin-top: 49px;
-  position: relative;
-  display: -webkit-inline-box;
-}
-
-.feature-higlights h1 {
-  font-size: 18px;
-  margin: 18px;
+  margin: 0;
 }
 
 .footer {
@@ -520,7 +508,7 @@ footer ul {
     gap: 3em;
   }
 
-  .login-signup div{
+  .login-signup div {
     display: inline-flex;
     align-items: center;
   }
@@ -535,7 +523,7 @@ footer ul {
     height: 1000px;
   }
 
-  .button-herobanner {
+  .button-hero-banner {
     width: 200px;
     height: 40px;
   }
@@ -544,20 +532,28 @@ footer ul {
     text-align: left;
   }
 
-  .feature-higlights {
+  .hero-banner .container, .hero-banner .content {
+    height: inherit;
+  }
+
+  .feature-highlights {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
   }
 
-  .feature1,
-  .feature2,
-  .feature3 {
-    width: 190px;
-    margin-top: 250px;
-    display: block;
+  .features {
+    max-width: 192px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
   }
 
-  .hero-icon {
-    margin-left: 15px;
+  .features p {
+    padding-left: 40px;
   }
 
   .footer-content {
