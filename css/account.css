@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .account-font-weight-bold {
   font-weight: 600;
 }
@@ -36,6 +40,11 @@
   font-weight: 600;
 }
 
+.account-details {
+  border-bottom: 1px solid #706f6f;
+  margin-bottom: 30px;
+}
+
 .producer-background {
   background-image: url("../img/producer-background-img.jpg");
   background-repeat: no-repeat;
@@ -48,18 +57,16 @@
 
 .producer-background p {
   color: white;
-  padding: 30px 30px;
+  padding: 32px;
   font-size: 1.2em;
   line-height: 1.5;
 }
 
-.producer-background button {
+.producer-background a {
   position: absolute;
-  bottom: 0;
-}
-.account-details {
-  border-bottom: 1px solid #706f6f;
-  margin-bottom: 30px;
+  bottom: 32px;
+  width: 100%;
+  padding: 0 32px;
 }
 
 @media screen and (min-width: 767px) {
@@ -87,9 +94,12 @@
     background-position-y: -110px;
   }
 
+  .producer-background a {
+    text-align: center;
+  }
+
   .producer-background button {
     width: 250px;
-    left: 25%;
   }
 
   .account-details {
