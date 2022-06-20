@@ -327,6 +327,7 @@ footer ul {
 .footer ul li {
   font-weight: 300;
   margin-bottom: 8px;
+  width: fit-content;
 }
 
 .footer-content .menu-bold {
