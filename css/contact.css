@@ -77,6 +77,7 @@ textarea {
 
 .show {
   display: block;
+  height: auto;
 }
 
 .contact-image {
