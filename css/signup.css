@@ -64,11 +64,6 @@
   font-size: 1.25em;
 }
 
-.mobile-button button {
-  position: absolute;
-  bottom: 0;
-}
-
 .feature-arrow-desktop {
   display: none;
   padding: 30px;

@@ -166,6 +166,16 @@ button {
   width: 100%;
 }
 
+.feature-button {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
 .button:hover {
   background-color: var(--upload-link-color);
   color: var(--body-background-color);

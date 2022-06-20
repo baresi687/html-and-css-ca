@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .account-font-weight-bold {
   font-weight: 600;
 }
@@ -60,13 +56,6 @@
   padding: 32px;
   font-size: 1.2em;
   line-height: 1.5;
-}
-
-.producer-background a {
-  position: absolute;
-  bottom: 32px;
-  width: 100%;
-  padding: 0 32px;
 }
 
 @media screen and (min-width: 767px) {
