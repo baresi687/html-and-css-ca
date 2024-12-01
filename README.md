@@ -32,10 +32,6 @@ Requirements of the project:
 - JavaScript (Added later in cross courses)
 - Headless WordPress REST API (Added later in cross course)
 
-## Deployed link
-
-https://html-and-css-ca-hreinn.netlify.app/
-
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/hreinn-gylfason-b9a48521a/)
